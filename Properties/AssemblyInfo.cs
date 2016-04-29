@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Tools")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("servOdroid Inc.")]
 [assembly: AssemblyProduct("Tools")]
 [assembly: AssemblyCopyright("Copyright 2011")]
 [assembly: AssemblyTrademark("")]
