@@ -14,7 +14,10 @@
         private static string _webProxyPort;
         private static string _webHttpLogin;
         private static string _webHttpPassword;
+        private static string _communicationSlackUrl;
         private static string _communicationSlackToken;
+        private static string _communicationSlackAccount;
+        private static string _communicationSlackTopic;
         private static string _communicationMailLogin;
         private static string _communicationMailPassword;
         private static string _communicationMailSmtpPort;
@@ -51,6 +54,9 @@
         public static string WebProxyPort { get { return _webProxyPort; } }
         public static string WebHttpLogin { get { return _webHttpLogin; } }
         public static string WebHttpPassword { get { return _webHttpPassword; } }
+        public static string CommunicationSlackUrl { get { return _communicationSlackUrl; } }
+        public static string CommunicationSlackAccount { get { return _communicationSlackAccount; } }
+        public static string CommunicationSlackTopic { get { return _communicationSlackTopic; } }
         public static string CommunicationSlackToken { get { return _communicationSlackToken; } }
         public static string CommunicationMailLogin { get { return _communicationMailLogin; } }
         public static string CommunicationMailPassword { get { return _communicationMailPassword; } }
@@ -100,7 +106,10 @@
             _webProxyPort = xml.SelectNodes("/configmanager/web/proxy/port").Count > 0 ? xml.SelectNodes("/configmanager/web/proxy/port")[0].InnerText : string.Empty;
             _webHttpLogin = xml.SelectNodes("/configmanager/web/http/login").Count > 0 ? xml.SelectNodes("/configmanager/web/http/login")[0].InnerText : string.Empty;
             _webHttpPassword = xml.SelectNodes("/configmanager/web/http/password").Count > 0 ? xml.SelectNodes("/configmanager/web/http/password")[0].InnerText : string.Empty;
-            _communicationSlackToken = xml.SelectNodes("/configmanager/communication/slacktoken").Count > 0 ? xml.SelectNodes("/configmanager/communication/slacktoken")[0].InnerText : string.Empty;
+            _communicationSlackToken = xml.SelectNodes("/configmanager/communication/slack/token").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/token")[0].InnerText : string.Empty;
+            _communicationSlackUrl = xml.SelectNodes("/configmanager/communication/slack/url").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/url")[0].InnerText : string.Empty;
+            _communicationSlackAccount = xml.SelectNodes("/configmanager/communication/slack/account").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/account")[0].InnerText : string.Empty;
+            _communicationSlackTopic = xml.SelectNodes("/configmanager/communication/slack/topic").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/topic")[0].InnerText : string.Empty;
             _communicationMailLogin = xml.SelectNodes("/configmanager/communication/mail/login").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/login")[0].InnerText : string.Empty;
             _communicationMailPassword = xml.SelectNodes("/configmanager/communication/mail/password").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/password")[0].InnerText : string.Empty;
             _communicationMailSmtpPort = xml.SelectNodes("/configmanager/communication/mail/smtp").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/smtp")[0].Attributes.GetNamedItem("port").Value : string.Empty;
