@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -118,10 +118,79 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="closeButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\closeButton.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TabCalendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\MenuDefault\TabCalendar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="closeButton_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\closeButton_Hover.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TabCalendarHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabcalendarhover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabCalendarSelected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabcalendarselected.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabFilm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabfilm.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabFilmHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabfilmhover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabFilmSelected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabfilmselected.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabFinancial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabfinancial.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabFinancialHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabfinancialhover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabFinancialSelected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabfinancialselected.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabMainMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabmainmenu.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabMainMenuHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabmainmenuhover .png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabMainMenuSelected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabmainmenuselected.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabMonitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabmonitor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabMonitorHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabmonitorhover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabMonitorSelected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabmonitorselected.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabmusic.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabMusicHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabmusichover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabMusicSelected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabmusicselected.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabpage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabPageHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabpagehover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabPageSelected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabpageselected.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabPicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabpicture.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabPictureHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabpicturehover.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabPictureSelected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabpictureselected.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TabVoid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\menudefault\tabvoid.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
