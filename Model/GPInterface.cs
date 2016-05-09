@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Crée par SharpDevelop.
  * Utilisateur: C357555
  * Date: 05/08/2011
@@ -37,13 +37,7 @@ namespace Tools4Libraries
 			get { return extention; }
 			set { extention = value; }
 		}
-		
-		public virtual RibbonTab Tsm
-		{
-			get { return null; }
-			set {}
-		}	
-		
+				
 		public virtual bool Openned
 		{
 			get { return openned; }
@@ -121,10 +115,6 @@ namespace Tools4Libraries
 		public virtual void GlobalAction(object sender, EventArgs e)
 		{
 			
-		}
-		public virtual RibbonTab BuildToolBar()
-		{
-			return null;
 		}
 		#endregion
 	}
