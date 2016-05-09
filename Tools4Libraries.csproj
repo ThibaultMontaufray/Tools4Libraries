@@ -218,6 +218,7 @@
     <EmbeddedResource Include="ResourceMenu.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceMenu.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -438,31 +439,81 @@
     <Content Include="Resources\IconSetDefault\32\user_vietnamese.png" />
     <Content Include="Resources\IconSetDefault\32\user_zorro.png" />
     <Content Include="Resources\IconSetDefault\32\vcard.png" />
-    <Content Include="Resources\MenuDefault\TabCalendar.png" />
-    <Content Include="Resources\MenuDefault\TabCalendarHover.png" />
-    <Content Include="Resources\MenuDefault\TabCalendarSelected.png" />
-    <Content Include="Resources\MenuDefault\TabFilm.png" />
-    <Content Include="Resources\MenuDefault\TabFilmHover.png" />
-    <Content Include="Resources\MenuDefault\TabFilmSelected.png" />
-    <Content Include="Resources\MenuDefault\TabFinancial.png" />
-    <Content Include="Resources\MenuDefault\TabFinancialHover.png" />
-    <Content Include="Resources\MenuDefault\TabFinancialSelected.png" />
-    <Content Include="Resources\MenuDefault\TabMainMenu.png" />
-    <Content Include="Resources\MenuDefault\TabMainMenuHover .png" />
-    <Content Include="Resources\MenuDefault\TabMainMenuSelected.png" />
-    <Content Include="Resources\MenuDefault\TabMonitor.png" />
-    <Content Include="Resources\MenuDefault\TabMonitorHover.png" />
-    <Content Include="Resources\MenuDefault\TabMonitorSelected.png" />
-    <Content Include="Resources\MenuDefault\TabMusic.png" />
-    <Content Include="Resources\MenuDefault\TabMusicHover.png" />
-    <Content Include="Resources\MenuDefault\TabMusicSelected.png" />
-    <Content Include="Resources\MenuDefault\TabPage.png" />
-    <Content Include="Resources\MenuDefault\TabPageHover.png" />
-    <Content Include="Resources\MenuDefault\TabPageSelected.png" />
-    <Content Include="Resources\MenuDefault\TabPicture.png" />
-    <Content Include="Resources\MenuDefault\TabPictureHover.png" />
-    <Content Include="Resources\MenuDefault\TabPictureSelected.png" />
-    <Content Include="Resources\MenuDefault\TabVoid.png" />
+    <Content Include="Resources\MenuDefault\TabCalendar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabCalendarHover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabCalendarSelected.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabFilm.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabFilmHover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabFilmSelected.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabFinancial.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabFinancialHover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabFinancialSelected.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabMainMenu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabMainMenuHover .png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabMainMenuSelected.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabMonitor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabMonitorHover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabMonitorSelected.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabMusic.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabMusicHover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabMusicSelected.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabPage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabPageHover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabPageSelected.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabPicture.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabPictureHover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabPictureSelected.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MenuDefault\TabVoid.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\window_tile_postit\WinBottomLeft.png" />
     <Content Include="Resources\window_tile_postit\WinBottomMiddle.png" />
     <Content Include="Resources\window_tile_postit\WinBottomRight.png" />
