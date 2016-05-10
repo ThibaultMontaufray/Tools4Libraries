@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tools4Libraries {
+namespace Tools4Libraries.Resources {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Tools4Libraries {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ResourceIconSet16Default {
+    public class ResourceIconSet32Default {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ResourceIconSet16Default() {
+        internal ResourceIconSet32Default() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Tools4Libraries {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Tools4Libraries.ResourceIconSet16Default", typeof(ResourceIconSet16Default).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Tools4Libraries.Resources.ResourceIconSet32Default", typeof(ResourceIconSet32Default).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -73,9 +73,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap arrow_ko_red {
+        public static System.Drawing.Bitmap balance_unbalance {
             get {
-                object obj = ResourceManager.GetObject("arrow_ko_red", resourceCulture);
+                object obj = ResourceManager.GetObject("balance_unbalance", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap arrow_left {
+        public static System.Drawing.Bitmap balance_unbalance_checked {
             get {
-                object obj = ResourceManager.GetObject("arrow_left", resourceCulture);
+                object obj = ResourceManager.GetObject("balance_unbalance_checked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,39 +93,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap arrow_ok_green {
+        public static System.Drawing.Bitmap balance_unbalance_unchecked {
             get {
-                object obj = ResourceManager.GetObject("arrow_ok_green", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap arrow_ok_yellow {
-            get {
-                object obj = ResourceManager.GetObject("arrow_ok_yellow", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap arrow_right {
-            get {
-                object obj = ResourceManager.GetObject("arrow_right", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap balance {
-            get {
-                object obj = ResourceManager.GetObject("balance", resourceCulture);
+                object obj = ResourceManager.GetObject("balance_unbalance_unchecked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +113,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap barchart16 {
+        public static System.Drawing.Bitmap barchart32 {
             get {
-                object obj = ResourceManager.GetObject("barchart16", resourceCulture);
+                object obj = ResourceManager.GetObject("barchart32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +123,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap bullet_toggle_minus {
+        public static System.Drawing.Bitmap book_open {
             get {
-                object obj = ResourceManager.GetObject("bullet_toggle_minus", resourceCulture);
+                object obj = ResourceManager.GetObject("book_open", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,29 +133,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap bullet_toggle_minus_multiple {
+        public static System.Drawing.Bitmap books {
             get {
-                object obj = ResourceManager.GetObject("bullet_toggle_minus_multiple", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap bullet_toggle_plus {
-            get {
-                object obj = ResourceManager.GetObject("bullet_toggle_plus", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap bullet_toggle_plus_multiple {
-            get {
-                object obj = ResourceManager.GetObject("bullet_toggle_plus_multiple", resourceCulture);
+                object obj = ResourceManager.GetObject("books", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +153,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap cancel {
+        public static System.Drawing.Bitmap coins32 {
             get {
-                object obj = ResourceManager.GetObject("cancel", resourceCulture);
+                object obj = ResourceManager.GetObject("coins32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +163,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap coins_in_hand {
+        public static System.Drawing.Bitmap conversion_of_currency32 {
             get {
-                object obj = ResourceManager.GetObject("coins_in_hand", resourceCulture);
+                object obj = ResourceManager.GetObject("conversion_of_currency32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +173,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap coins16 {
+        public static System.Drawing.Bitmap CurrencyDollar16 {
             get {
-                object obj = ResourceManager.GetObject("coins16", resourceCulture);
+                object obj = ResourceManager.GetObject("CurrencyDollar16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +183,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap color_wheel {
+        public static System.Drawing.Bitmap decimal_more {
             get {
-                object obj = ResourceManager.GetObject("color_wheel", resourceCulture);
+                object obj = ResourceManager.GetObject("decimal_more", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +193,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap comment_code_add {
+        public static System.Drawing.Bitmap directory_listing {
             get {
-                object obj = ResourceManager.GetObject("comment_code_add", resourceCulture);
+                object obj = ResourceManager.GetObject("directory_listing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,9 +203,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap comment_code_remove {
+        public static System.Drawing.Bitmap directory_listing_checked {
             get {
-                object obj = ResourceManager.GetObject("comment_code_remove", resourceCulture);
+                object obj = ResourceManager.GetObject("directory_listing_checked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,79 +213,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap conversion_of_currency16 {
+        public static System.Drawing.Bitmap directory_listing_unchecked {
             get {
-                object obj = ResourceManager.GetObject("conversion_of_currency16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap currencydollar16 {
-            get {
-                object obj = ResourceManager.GetObject("currencydollar16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap currencyeuro16 {
-            get {
-                object obj = ResourceManager.GetObject("currencyeuro16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap currencyother16 {
-            get {
-                object obj = ResourceManager.GetObject("currencyother16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap currencypound16 {
-            get {
-                object obj = ResourceManager.GetObject("currencypound16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap currencyrupee16 {
-            get {
-                object obj = ResourceManager.GetObject("currencyrupee16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap currencyyen16 {
-            get {
-                object obj = ResourceManager.GetObject("currencyyen16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap delete {
-            get {
-                object obj = ResourceManager.GetObject("delete", resourceCulture);
+                object obj = ResourceManager.GetObject("directory_listing_unchecked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -346,6 +226,16 @@ namespace Tools4Libraries {
         public static System.Drawing.Bitmap document_index {
             get {
                 object obj = ResourceManager.GetObject("document_index", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap document_inspect {
+            get {
+                object obj = ResourceManager.GetObject("document_inspect", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,9 +263,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap extract_foreground_objects {
+        public static System.Drawing.Bitmap file_extension_bin {
             get {
-                object obj = ResourceManager.GetObject("extract_foreground_objects", resourceCulture);
+                object obj = ResourceManager.GetObject("file_extension_bin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,9 +273,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap find {
+        public static System.Drawing.Bitmap file_extension_csv {
             get {
-                object obj = ResourceManager.GetObject("find", resourceCulture);
+                object obj = ResourceManager.GetObject("file_extension_csv", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,9 +283,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap gift_add {
+        public static System.Drawing.Bitmap file_extension_html {
             get {
-                object obj = ResourceManager.GetObject("gift_add", resourceCulture);
+                object obj = ResourceManager.GetObject("file_extension_html", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,9 +293,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap importExcel16 {
+        public static System.Drawing.Bitmap file_extension_pdf {
             get {
-                object obj = ResourceManager.GetObject("importExcel16", resourceCulture);
+                object obj = ResourceManager.GetObject("file_extension_pdf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,9 +303,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap keyboard_magnify {
+        public static System.Drawing.Bitmap file_extension_txt {
             get {
-                object obj = ResourceManager.GetObject("keyboard_magnify", resourceCulture);
+                object obj = ResourceManager.GetObject("file_extension_txt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -423,9 +313,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap mvtAdd16 {
+        public static System.Drawing.Bitmap importExcel32 {
             get {
-                object obj = ResourceManager.GetObject("mvtAdd16", resourceCulture);
+                object obj = ResourceManager.GetObject("importExcel32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -433,9 +323,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap newProject16 {
+        public static System.Drawing.Bitmap insert_element {
             get {
-                object obj = ResourceManager.GetObject("newProject16", resourceCulture);
+                object obj = ResourceManager.GetObject("insert_element", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -443,9 +333,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap openProjec16 {
+        public static System.Drawing.Bitmap key_a {
             get {
-                object obj = ResourceManager.GetObject("openProjec16", resourceCulture);
+                object obj = ResourceManager.GetObject("key_a", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -453,9 +343,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap page_edit {
+        public static System.Drawing.Bitmap key_b {
             get {
-                object obj = ResourceManager.GetObject("page_edit", resourceCulture);
+                object obj = ResourceManager.GetObject("key_b", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -463,9 +353,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap page_key {
+        public static System.Drawing.Bitmap key_e {
             get {
-                object obj = ResourceManager.GetObject("page_key", resourceCulture);
+                object obj = ResourceManager.GetObject("key_e", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -473,9 +363,99 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap piechart16 {
+        public static System.Drawing.Bitmap key_x {
             get {
-                object obj = ResourceManager.GetObject("piechart16", resourceCulture);
+                object obj = ResourceManager.GetObject("key_x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap large_tiles {
+            get {
+                object obj = ResourceManager.GetObject("large_tiles", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap mvtAdd32 {
+            get {
+                object obj = ResourceManager.GetObject("mvtAdd32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap newProject32 {
+            get {
+                object obj = ResourceManager.GetObject("newProject32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap openProject32 {
+            get {
+                object obj = ResourceManager.GetObject("openProject32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap page_white_code {
+            get {
+                object obj = ResourceManager.GetObject("page_white_code", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap participation_rate {
+            get {
+                object obj = ResourceManager.GetObject("participation_rate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap participation_rate_checked {
+            get {
+                object obj = ResourceManager.GetObject("participation_rate_checked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap participation_rate_unchecked {
+            get {
+                object obj = ResourceManager.GetObject("participation_rate_unchecked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap piechart32 {
+            get {
+                object obj = ResourceManager.GetObject("piechart32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -503,9 +483,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap resultset_next {
+        public static System.Drawing.Bitmap small_business {
             get {
-                object obj = ResourceManager.GetObject("resultset_next", resourceCulture);
+                object obj = ResourceManager.GetObject("small_business", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -513,9 +493,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap script_go {
+        public static System.Drawing.Bitmap sort_columns {
             get {
-                object obj = ResourceManager.GetObject("script_go", resourceCulture);
+                object obj = ResourceManager.GetObject("sort_columns", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -523,9 +503,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap stop {
+        public static System.Drawing.Bitmap statistics {
             get {
-                object obj = ResourceManager.GetObject("stop", resourceCulture);
+                object obj = ResourceManager.GetObject("statistics", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -533,9 +513,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap table_delete {
+        public static System.Drawing.Bitmap statistics_checked {
             get {
-                object obj = ResourceManager.GetObject("table_delete", resourceCulture);
+                object obj = ResourceManager.GetObject("statistics_checked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -543,9 +523,39 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap table_edit {
+        public static System.Drawing.Bitmap statistics_unchecked {
             get {
-                object obj = ResourceManager.GetObject("table_edit", resourceCulture);
+                object obj = ResourceManager.GetObject("statistics_unchecked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap table_money {
+            get {
+                object obj = ResourceManager.GetObject("table_money", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap table_money_checked {
+            get {
+                object obj = ResourceManager.GetObject("table_money_checked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap table_money_unchecked {
+            get {
+                object obj = ResourceManager.GetObject("table_money_unchecked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -566,46 +576,6 @@ namespace Tools4Libraries {
         public static System.Drawing.Bitmap text_horizontalrule {
             get {
                 object obj = ResourceManager.GetObject("text_horizontalrule", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap text_indent {
-            get {
-                object obj = ResourceManager.GetObject("text_indent", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap text_indent_remove {
-            get {
-                object obj = ResourceManager.GetObject("text_indent_remove", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap text_linespacing {
-            get {
-                object obj = ResourceManager.GetObject("text_linespacing", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap text_replace {
-            get {
-                object obj = ResourceManager.GetObject("text_replace", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -993,9 +963,19 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap userAdd16 {
+        public static System.Drawing.Bitmap userAdd32 {
             get {
-                object obj = ResourceManager.GetObject("userAdd16", resourceCulture);
+                object obj = ResourceManager.GetObject("userAdd32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap vcard {
+            get {
+                object obj = ResourceManager.GetObject("vcard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

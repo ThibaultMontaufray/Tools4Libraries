@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tools4Libraries {
+namespace Tools4Libraries.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Tools4Libraries {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Tools4Libraries.ResourceMenu", typeof(ResourceMenu).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Tools4Libraries.Resources.ResourceMenu", typeof(ResourceMenu).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
