@@ -47,14 +47,6 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ControlzEx, Version=2.0.1.61, Culture=neutral, PublicKeyToken=f08b075e934b7045, processorArchitecture=MSIL">
-      <HintPath>packages\ControlzEx.2.0.1.61\lib\net45\ControlzEx.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Fluent, Version=4.0.3.394, Culture=neutral, PublicKeyToken=3e436e32a8c5546f, processorArchitecture=MSIL">
-      <HintPath>packages\Fluent.Ribbon.4.0.3.394\lib\net45\Fluent.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core">
@@ -65,10 +57,6 @@
     <Reference Include="System.Management" />
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\ControlzEx.2.0.1.61\lib\net45\System.Windows.Interactivity.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -121,11 +109,31 @@
     <Compile Include="Graphics\ImagedComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Params.cs" />
-    <Compile Include="ProjectInstaller.cs">
+    <Compile Include="Controler\Params.cs" />
+    <Compile Include="Resources\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ResourceIconSet16Default.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceIconSet16Default.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ResourceIconSet32Default.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceIconSet32Default.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ResourceMenu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceMenu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Service\ProjectInstaller.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ProjectInstaller.Designer.cs">
+    <Compile Include="Service\ProjectInstaller.Designer.cs">
       <DependentUpon>ProjectInstaller.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
@@ -152,27 +160,6 @@
     <Compile Include="Graphics\window_popup.Designer.cs">
       <DependentUpon>window_popup.cs</DependentUpon>
     </Compile>
-    <Compile Include="Resource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resource.resx</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="ResourceIconSet16Default.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResourceIconSet16Default.resx</DependentUpon>
-    </Compile>
-    <Compile Include="ResourceIconSet32Default.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResourceIconSet32Default.resx</DependentUpon>
-    </Compile>
-    <Compile Include="ResourceMenu.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResourceMenu.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Graphics\window_classic.resx">
@@ -181,17 +168,18 @@
     <EmbeddedResource Include="Graphics\window_jarvis.resx">
       <DependentUpon>window_jarvis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProjectInstaller.resx">
+    <EmbeddedResource Include="Service\ProjectInstaller.resx">
       <DependentUpon>ProjectInstaller.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResourceIconSet16Default.resx">
+    <EmbeddedResource Include="Resources\ResourceIconSet16Default.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceIconSet16Default.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resource.resx">
+    <EmbeddedResource Include="Resources\Resource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Graphics\window_tile_postit.resx">
       <DependentUpon>window_tile_postit.cs</DependentUpon>
@@ -212,15 +200,15 @@
     <EmbeddedResource Include="Graphics\window_popup.resx">
       <DependentUpon>window_popup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResourceIconSet32Default.resx">
+    <EmbeddedResource Include="Resources\ResourceIconSet32Default.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>ResourceIconSet32Default.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResourceMenu.resx">
+    <EmbeddedResource Include="Resources\ResourceMenu.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResourceMenu.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>ResourceMenu.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
