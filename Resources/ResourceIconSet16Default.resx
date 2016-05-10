@@ -181,23 +181,23 @@
   <data name="conversion_of_currency16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>IconSetDefault\16\conversion_of_currency16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="currencydollar16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>IconSetDefault\16\currencydollar16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CurrencyDollar16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>IconSetDefault\16\CurrencyDollar16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="currencyeuro16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>IconSetDefault\16\currencyeuro16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CurrencyEuro16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>IconSetDefault\16\CurrencyEuro16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="currencyother16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>IconSetDefault\16\currencyother16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CurrencyOther16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>IconSetDefault\16\CurrencyOther16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="currencypound16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>IconSetDefault\16\currencypound16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CurrencyPound16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>IconSetDefault\16\CurrencyPound16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="currencyrupee16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>IconSetDefault\16\currencyrupee16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CurrencyRupee16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>IconSetDefault\16\CurrencyRupee16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="currencyyen16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>IconSetDefault\16\currencyyen16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CurrencyYen16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>IconSetDefault\16\CurrencyYen16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>IconSetDefault\16\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
