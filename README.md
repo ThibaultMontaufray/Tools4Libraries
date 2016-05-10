@@ -2,4 +2,3 @@
 [![License](https://img.shields.io/github/license/brandondahler/Data.HashFunction.svg)](https://raw.githubusercontent.com/ThibaultMontaufray/Tools4Libraries/master/License) 
 [![Build Status](https://travis-ci.org/ThibaultMontaufray/Tools4Libraries.svg?branch=master)](https://travis-ci.org/ThibaultMontaufray/Tools4Libraries)
 [![Coverage Status](https://coveralls.io/repos/github/ThibaultMontaufray/Tools4Libraries/badge.svg?branch=master)](https://coveralls.io/github/ThibaultMontaufray/Tools4Libraries?branch=master) 
-[![Issue Count](https://codeclimate.com/github/ThibaultMontaufray/Tools4Libraries/badges/issue_count.svg)](https://codeclimate.com/github/ThibaultMontaufray/Tools4Libraries)
