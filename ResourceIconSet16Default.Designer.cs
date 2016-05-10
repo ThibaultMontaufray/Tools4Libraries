@@ -273,9 +273,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap currencydollar16 {
+        public static System.Drawing.Bitmap CurrencyDollar16 {
             get {
-                object obj = ResourceManager.GetObject("currencydollar16", resourceCulture);
+                object obj = ResourceManager.GetObject("CurrencyDollar16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,9 +283,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap currencyeuro16 {
+        public static System.Drawing.Bitmap CurrencyEuro16 {
             get {
-                object obj = ResourceManager.GetObject("currencyeuro16", resourceCulture);
+                object obj = ResourceManager.GetObject("CurrencyEuro16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,9 +293,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap currencyother16 {
+        public static System.Drawing.Bitmap CurrencyOther16 {
             get {
-                object obj = ResourceManager.GetObject("currencyother16", resourceCulture);
+                object obj = ResourceManager.GetObject("CurrencyOther16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -303,9 +303,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap currencypound16 {
+        public static System.Drawing.Bitmap CurrencyPound16 {
             get {
-                object obj = ResourceManager.GetObject("currencypound16", resourceCulture);
+                object obj = ResourceManager.GetObject("CurrencyPound16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,9 +313,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap currencyrupee16 {
+        public static System.Drawing.Bitmap CurrencyRupee16 {
             get {
-                object obj = ResourceManager.GetObject("currencyrupee16", resourceCulture);
+                object obj = ResourceManager.GetObject("CurrencyRupee16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,9 +323,9 @@ namespace Tools4Libraries {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap currencyyen16 {
+        public static System.Drawing.Bitmap CurrencyYen16 {
             get {
-                object obj = ResourceManager.GetObject("currencyyen16", resourceCulture);
+                object obj = ResourceManager.GetObject("CurrencyYen16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
