@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Created by SharpDevelop.
  * User: C357555
  * Date: 26/10/2011
@@ -14,11 +14,11 @@ namespace Tools4Libraries
 	/// <summary>
 	/// Description of ToolStripMenuManager.
 	/// </summary>
-	public class ToolStripMenuManager : System.Windows.Forms.RibbonTab
-	{
+	public class ToolStripMenuManager
+    {
 		#region Attributes
 		private Panel currentTabPage;
-		private RibbonTab ribbontab;
+		//private RibbonTab ribbontab;
 		#endregion
 		
 		#region Properties
@@ -28,11 +28,11 @@ namespace Tools4Libraries
 			set { currentTabPage = value;}
 		}
 		
-		public RibbonTab RibbonTabMenu
-		{
-			get { return ribbontab; }
-			set { ribbontab = value; }
-		}
+		//public RibbonTab RibbonTabMenu
+		//{
+		//	get { return ribbontab; }
+		//	set { ribbontab = value; }
+		//}
 		#endregion
 		
 		#region Constructor
