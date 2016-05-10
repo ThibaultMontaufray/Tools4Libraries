@@ -167,7 +167,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Crypto\Manager_Cryptographie.csproj">
+    <ProjectReference Include="..\Manager_Crypto\Manager_Cryptographie.csproj">
       <Project>{9EF2FE1D-FBB8-4446-B35F-A1DE87DD9417}</Project>
       <Name>Manager_Cryptographie</Name>
     </ProjectReference>
