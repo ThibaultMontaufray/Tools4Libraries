@@ -37,16 +37,17 @@ namespace Tools4Libraries
 	/// </summary>
 	public static class Log
 	{
-		#region Attribute
-		private static int logLevel;
-		private static StreamWriter sw;
+        #region Attribute
+        public static readonly string LOGPATH = Environment.CurrentDirectory +  @"\Log\application.log";
+
+        private static int _logLevel;
 		#endregion
 		
 		#region Properties
 		public static int LogLevel
 		{
-			get { return logLevel; }
-			set { logLevel = value; }
+			get { return _logLevel; }
+			set { _logLevel = value; }
 		}
 		#endregion
 		
@@ -57,39 +58,41 @@ namespace Tools4Libraries
 			string levelstring = "";
 			string[] tmp = text.Split(' ');
 			levelstring = tmp[1];
-			switch (levelstring) 
-			{
-				case "DEB":
-					level = 5;
-					break;
-				case "INF":
-					level = 4;
-					break;
-				case "WRN":
-					level = 3;
-					break;
-				case "ERR":
-					level = 2;
-					break;
-				case "CRT":
-					level = 1;
-					break;
-				case "EMY":
-					level = 0;
-					break;
-				default:
-					// we don't recognise the level so we show the message.
-					level = 0;
-					text = "->" + text;
-					break;
-			}
+            if (!string.IsNullOrEmpty(levelstring))
+            { 
+			    switch (levelstring.ToUpper()) 
+			    {
+				    case "DEB":
+					    level = 5;
+					    break;
+				    case "INF":
+					    level = 4;
+					    break;
+				    case "WRN":
+					    level = 3;
+					    break;
+				    case "ERR":
+					    level = 2;
+					    break;
+				    case "CRT":
+					    level = 1;
+					    break;
+				    case "EMY":
+					    level = 0;
+					    break;
+				    default:
+					    // we don't recognise the level so we show the message.
+					    level = 0;
+					    text = text;
+					    break;
+			    }
 			
-			if (level <= logLevel)
-			{
-				MessageBox.Show(text, "Debug messages", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-			}
-			
-			tofile(text);
+			    if (level <= _logLevel)
+			    {
+				    MessageBox.Show(text, "Debug messages", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+			    }
+            }
+            tofile(text);
 		}
 		#endregion
 		
@@ -98,21 +101,15 @@ namespace Tools4Libraries
 		{
             try
             {
-            	if (File.Exists(Environment.CurrentDirectory + @"\Log\application.log")) 
-		        { 
-            		using (sw = File.AppendText(Environment.CurrentDirectory + @"\Log\application.log"))
-			        {
-            			buildfile(text);
-			        }	
-		        }
+            	if (File.Exists(LOGPATH)) 
+		        {
+                    buildfile(text);
+			    }
             	else
             	{
             		AppliParams ap = new AppliParams();
             		ap.CreateAppliPlateform();
-		            using (sw = File.CreateText(Environment.CurrentDirectory + @"\Log\application.log")) 
-		            {
-		            	buildfile(text);
-		            }		
+		            buildfile(text);
             	}
 		    }
             catch (Exception exp)
@@ -128,10 +125,10 @@ namespace Tools4Libraries
         	string desc = "";
         	string date = "";
         	
-			string[] tmps = text.Split(' ');
-			
-        	// level -------------------------------------
-			string tmp = tmps[1];
+			string[] tmps = text.Split(':')[0].Trim().Split(' ');
+
+            // level -------------------------------------
+            string tmp = tmps[1];
 			switch (tmp) 
 			{
 				case "DEB":
@@ -158,16 +155,19 @@ namespace Tools4Libraries
 			}
 			
         	// num -------------------------------------
-			num = "<EventID=\"" + tmps[3] + "\"/>";
+			num = "<EventID=\"" + tmps[0] + "\"/>";
 			
         	// description -----------------------------
 			tmps = text.Split(']');
-			desc = "<EventText=\"" + tmps[1].Replace('\n', '#') + "\"/>";
+			desc = "<EventText=\"" + text.Split(':')[1].Replace('\n', '#').Trim() + "\"/>";
 			
         	// date ------------------------------------
-        	date = "<DateTime=\"" + DateTime.Now + "\"/>";
-        	
-            sw.WriteLine("<log>" + date + level + num + desc + "</log>");
+        	date = "<DateTime=\"" + DateTime.Now.ToString("yyyyMMdd:HHmmss") + "\"/>";
+
+            using (StreamWriter sw = File.CreateText(LOGPATH))
+            {
+                sw.WriteLine("<log>" + date + level + num + desc + "</log>");
+            }
 			
 		}
 		#endregion

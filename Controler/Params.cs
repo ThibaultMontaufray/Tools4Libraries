@@ -1,11 +1,12 @@
 ﻿namespace Tools4Libraries
 {
+    using System.IO;
     using System.Xml;
 
     public static class Params
     {
-        private const string CONFIGFILE = @"../../../configmanagers.xml";
-        //private const string CONFIGFILE = @"D:\DEV\_Assistant\Assistant\configmanagers.xml";
+        //private const string CONFIGFILE = @"../../../configmanagers.xml";
+        private const string CONFIGFILE = @"..\configmanagers.xml";
 
         #region Attribute
         private static string _webProxyHost;
@@ -97,46 +98,129 @@
         #region Methods private
         private static void LoadXmlParamsFile()
         {
-            XmlDocument xml = new XmlDocument();
-            xml.Load(CONFIGFILE);
+            if (File.Exists(CONFIGFILE))
+            { 
+                XmlDocument xml = new XmlDocument();
+                xml.Load(CONFIGFILE);
 
-            _webProxyHost = xml.SelectNodes("/configmanager/web/proxy/host").Count > 0 ? xml.SelectNodes("/configmanager/web/proxy/host")[0].InnerText : string.Empty;
-            _webProxyLogin = xml.SelectNodes("/configmanager/web/proxy/login").Count > 0 ? xml.SelectNodes("/configmanager/web/proxy/login")[0].InnerText : string.Empty;
-            _webProxyPassword = xml.SelectNodes("/configmanager/web/proxy/password").Count > 0 ? xml.SelectNodes("/configmanager/web/proxy/password")[0].InnerText : string.Empty;
-            _webProxyPort = xml.SelectNodes("/configmanager/web/proxy/port").Count > 0 ? xml.SelectNodes("/configmanager/web/proxy/port")[0].InnerText : string.Empty;
-            _webHttpLogin = xml.SelectNodes("/configmanager/web/http/login").Count > 0 ? xml.SelectNodes("/configmanager/web/http/login")[0].InnerText : string.Empty;
-            _webHttpPassword = xml.SelectNodes("/configmanager/web/http/password").Count > 0 ? xml.SelectNodes("/configmanager/web/http/password")[0].InnerText : string.Empty;
-            _communicationSlackToken = xml.SelectNodes("/configmanager/communication/slack/token").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/token")[0].InnerText : string.Empty;
-            _communicationSlackUrl = xml.SelectNodes("/configmanager/communication/slack/url").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/url")[0].InnerText : string.Empty;
-            _communicationSlackAccount = xml.SelectNodes("/configmanager/communication/slack/account").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/account")[0].InnerText : string.Empty;
-            _communicationSlackTopic = xml.SelectNodes("/configmanager/communication/slack/topic").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/topic")[0].InnerText : string.Empty;
-            _communicationMailLogin = xml.SelectNodes("/configmanager/communication/mail/login").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/login")[0].InnerText : string.Empty;
-            _communicationMailPassword = xml.SelectNodes("/configmanager/communication/mail/password").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/password")[0].InnerText : string.Empty;
-            _communicationMailSmtpPort = xml.SelectNodes("/configmanager/communication/mail/smtp").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/smtp")[0].Attributes.GetNamedItem("port").Value : string.Empty;
-            _communicationMailSmtpHost = xml.SelectNodes("/configmanager/communication/mail/smtp").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/smtp")[0].Attributes.GetNamedItem("host").Value : string.Empty;
-            _logisticSncfToken = xml.SelectNodes("/configmanager/logistic/sncfkey").Count > 0 ? xml.SelectNodes("/configmanager/logistic/sncfkey")[0].InnerText : string.Empty;
-            _databaseHost = xml.SelectNodes("/configmanager/database/host").Count > 0 ? xml.SelectNodes("/configmanager/database/host")[0].InnerText : string.Empty;
-            _databasePassword = xml.SelectNodes("/configmanager/database/password").Count > 0 ? xml.SelectNodes("/configmanager/database/password")[0].InnerText : string.Empty;
-            _databaseLogin = xml.SelectNodes("/configmanager/database/login").Count > 0 ? xml.SelectNodes("/configmanager/database/login")[0].InnerText : string.Empty;
-            _databaseName = xml.SelectNodes("/configmanager/database/name").Count > 0 ? xml.SelectNodes("/configmanager/database/name")[0].InnerText : string.Empty;
-            _githubHost = xml.SelectNodes("/configmanager/github/host").Count > 0 ? xml.SelectNodes("/configmanager/github/host")[0].InnerText : string.Empty;
-            _githubPassword = xml.SelectNodes("/configmanager/github/password").Count > 0 ? xml.SelectNodes("/configmanager/github/password")[0].InnerText : string.Empty;
-            _githubLogin = xml.SelectNodes("/configmanager/github/login").Count > 0 ? xml.SelectNodes("/configmanager/github/login")[0].InnerText : string.Empty;
-            _jiraHost = xml.SelectNodes("/configmanager/jira/host").Count > 0 ? xml.SelectNodes("/configmanager/jira/host")[0].InnerText : string.Empty;
-            _jiraPassword = xml.SelectNodes("/configmanager/jira/password").Count > 0 ? xml.SelectNodes("/configmanager/jira/password")[0].InnerText : string.Empty;
-            _jiraLogin = xml.SelectNodes("/configmanager/jira/login").Count > 0 ? xml.SelectNodes("/configmanager/jira/login")[0].InnerText : string.Empty;
-            _sonarHost = xml.SelectNodes("/configmanager/sonar/host").Count > 0 ? xml.SelectNodes("/configmanager/sonar/host")[0].InnerText : string.Empty;
-            _sonarPassword = xml.SelectNodes("/configmanager/sonar/password").Count > 0 ? xml.SelectNodes("/configmanager/sonar/password")[0].InnerText : string.Empty;
-            _sonarLogin = xml.SelectNodes("/configmanager/sonar/login").Count > 0 ? xml.SelectNodes("/configmanager/sonar/login")[0].InnerText : string.Empty;
-            _teamcityHost = xml.SelectNodes("/configmanager/teamcity/host").Count > 0 ? xml.SelectNodes("/configmanager/teamcity/host")[0].InnerText : string.Empty;
-            _teamcityPassword = xml.SelectNodes("/configmanager/teamcity/password").Count > 0 ? xml.SelectNodes("/configmanager/teamcity/password")[0].InnerText : string.Empty;
-            _teamcityLogin = xml.SelectNodes("/configmanager/teamcity/login").Count > 0 ? xml.SelectNodes("/configmanager/teamcity/login")[0].InnerText : string.Empty;
-            _jenkinsHost = xml.SelectNodes("/configmanager/jenkins/host").Count > 0 ? xml.SelectNodes("/configmanager/jenkins/host")[0].InnerText : string.Empty;
-            _jenkinsPassword = xml.SelectNodes("/configmanager/jenkins/password").Count > 0 ? xml.SelectNodes("/configmanager/jenkins/password")[0].InnerText : string.Empty;
-            _jenkinsLogin = xml.SelectNodes("/configmanager/jenkins/login").Count > 0 ? xml.SelectNodes("/configmanager/jenkins/login")[0].InnerText : string.Empty;
-            _dockerHost = xml.SelectNodes("/configmanager/docker/host").Count > 0 ? xml.SelectNodes("/configmanager/docker/host")[0].InnerText : string.Empty;
-            _dockerPassword = xml.SelectNodes("/configmanager/docker/password").Count > 0 ? xml.SelectNodes("/configmanager/docker/password")[0].InnerText : string.Empty;
-            _dockerLogin = xml.SelectNodes("/configmanager/docker/login").Count > 0 ? xml.SelectNodes("/configmanager/docker/login")[0].InnerText : string.Empty;
+                _webProxyHost = xml.SelectNodes("/configmanager/web/proxy/host").Count > 0 ? xml.SelectNodes("/configmanager/web/proxy/host")[0].InnerText : string.Empty;
+                _webProxyLogin = xml.SelectNodes("/configmanager/web/proxy/login").Count > 0 ? xml.SelectNodes("/configmanager/web/proxy/login")[0].InnerText : string.Empty;
+                _webProxyPassword = xml.SelectNodes("/configmanager/web/proxy/password").Count > 0 ? xml.SelectNodes("/configmanager/web/proxy/password")[0].InnerText : string.Empty;
+                _webProxyPort = xml.SelectNodes("/configmanager/web/proxy/port").Count > 0 ? xml.SelectNodes("/configmanager/web/proxy/port")[0].InnerText : string.Empty;
+                _webHttpLogin = xml.SelectNodes("/configmanager/web/http/login").Count > 0 ? xml.SelectNodes("/configmanager/web/http/login")[0].InnerText : string.Empty;
+                _webHttpPassword = xml.SelectNodes("/configmanager/web/http/password").Count > 0 ? xml.SelectNodes("/configmanager/web/http/password")[0].InnerText : string.Empty;
+                _communicationSlackToken = xml.SelectNodes("/configmanager/communication/slack/token").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/token")[0].InnerText : string.Empty;
+                _communicationSlackUrl = xml.SelectNodes("/configmanager/communication/slack/url").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/url")[0].InnerText : string.Empty;
+                _communicationSlackAccount = xml.SelectNodes("/configmanager/communication/slack/account").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/account")[0].InnerText : string.Empty;
+                _communicationSlackTopic = xml.SelectNodes("/configmanager/communication/slack/topic").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/topic")[0].InnerText : string.Empty;
+                _communicationMailLogin = xml.SelectNodes("/configmanager/communication/mail/login").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/login")[0].InnerText : string.Empty;
+                _communicationMailPassword = xml.SelectNodes("/configmanager/communication/mail/password").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/password")[0].InnerText : string.Empty;
+                _communicationMailSmtpPort = xml.SelectNodes("/configmanager/communication/mail/smtp").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/smtp")[0].Attributes.GetNamedItem("port").Value : string.Empty;
+                _communicationMailSmtpHost = xml.SelectNodes("/configmanager/communication/mail/smtp").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/smtp")[0].Attributes.GetNamedItem("host").Value : string.Empty;
+                _logisticSncfToken = xml.SelectNodes("/configmanager/logistic/sncfkey").Count > 0 ? xml.SelectNodes("/configmanager/logistic/sncfkey")[0].InnerText : string.Empty;
+                _databaseHost = xml.SelectNodes("/configmanager/database/host").Count > 0 ? xml.SelectNodes("/configmanager/database/host")[0].InnerText : string.Empty;
+                _databasePassword = xml.SelectNodes("/configmanager/database/password").Count > 0 ? xml.SelectNodes("/configmanager/database/password")[0].InnerText : string.Empty;
+                _databaseLogin = xml.SelectNodes("/configmanager/database/login").Count > 0 ? xml.SelectNodes("/configmanager/database/login")[0].InnerText : string.Empty;
+                _databaseName = xml.SelectNodes("/configmanager/database/name").Count > 0 ? xml.SelectNodes("/configmanager/database/name")[0].InnerText : string.Empty;
+                _githubHost = xml.SelectNodes("/configmanager/github/host").Count > 0 ? xml.SelectNodes("/configmanager/github/host")[0].InnerText : string.Empty;
+                _githubPassword = xml.SelectNodes("/configmanager/github/password").Count > 0 ? xml.SelectNodes("/configmanager/github/password")[0].InnerText : string.Empty;
+                _githubLogin = xml.SelectNodes("/configmanager/github/login").Count > 0 ? xml.SelectNodes("/configmanager/github/login")[0].InnerText : string.Empty;
+                _jiraHost = xml.SelectNodes("/configmanager/jira/host").Count > 0 ? xml.SelectNodes("/configmanager/jira/host")[0].InnerText : string.Empty;
+                _jiraPassword = xml.SelectNodes("/configmanager/jira/password").Count > 0 ? xml.SelectNodes("/configmanager/jira/password")[0].InnerText : string.Empty;
+                _jiraLogin = xml.SelectNodes("/configmanager/jira/login").Count > 0 ? xml.SelectNodes("/configmanager/jira/login")[0].InnerText : string.Empty;
+                _sonarHost = xml.SelectNodes("/configmanager/sonar/host").Count > 0 ? xml.SelectNodes("/configmanager/sonar/host")[0].InnerText : string.Empty;
+                _sonarPassword = xml.SelectNodes("/configmanager/sonar/password").Count > 0 ? xml.SelectNodes("/configmanager/sonar/password")[0].InnerText : string.Empty;
+                _sonarLogin = xml.SelectNodes("/configmanager/sonar/login").Count > 0 ? xml.SelectNodes("/configmanager/sonar/login")[0].InnerText : string.Empty;
+                _teamcityHost = xml.SelectNodes("/configmanager/teamcity/host").Count > 0 ? xml.SelectNodes("/configmanager/teamcity/host")[0].InnerText : string.Empty;
+                _teamcityPassword = xml.SelectNodes("/configmanager/teamcity/password").Count > 0 ? xml.SelectNodes("/configmanager/teamcity/password")[0].InnerText : string.Empty;
+                _teamcityLogin = xml.SelectNodes("/configmanager/teamcity/login").Count > 0 ? xml.SelectNodes("/configmanager/teamcity/login")[0].InnerText : string.Empty;
+                _jenkinsHost = xml.SelectNodes("/configmanager/jenkins/host").Count > 0 ? xml.SelectNodes("/configmanager/jenkins/host")[0].InnerText : string.Empty;
+                _jenkinsPassword = xml.SelectNodes("/configmanager/jenkins/password").Count > 0 ? xml.SelectNodes("/configmanager/jenkins/password")[0].InnerText : string.Empty;
+                _jenkinsLogin = xml.SelectNodes("/configmanager/jenkins/login").Count > 0 ? xml.SelectNodes("/configmanager/jenkins/login")[0].InnerText : string.Empty;
+                _dockerHost = xml.SelectNodes("/configmanager/docker/host").Count > 0 ? xml.SelectNodes("/configmanager/docker/host")[0].InnerText : string.Empty;
+                _dockerPassword = xml.SelectNodes("/configmanager/docker/password").Count > 0 ? xml.SelectNodes("/configmanager/docker/password")[0].InnerText : string.Empty;
+                _dockerLogin = xml.SelectNodes("/configmanager/docker/login").Count > 0 ? xml.SelectNodes("/configmanager/docker/login")[0].InnerText : string.Empty;
+            }
+            else
+            {
+                CreateXmlParamsFile();
+            }
+        }
+        private static void CreateXmlParamsFile()
+        {
+            using (StreamWriter sw = new StreamWriter(CONFIGFILE))
+            {
+                sw.Write(@"
+                    <configmanager>
+	                    <web>
+		                    <proxy>
+			                    <host></host>
+			                    <login></login>
+			                    <password></password>
+			                    <port></port>
+		                    </proxy>
+		                    <http>
+			                    <login></login>
+			                    <password></password>
+		                    </http>
+	                    </web>
+	                    <communication>
+		                    <slack>
+			                    <url>https://{0}.slack.com/services/hooks/incoming-webhook?token={1}</url>
+			                    <topic></topic>
+			                    <account></account>
+			                    <token></token>
+		                    </slack>
+		                    <mail>
+			                    <login></login>
+			                    <password></password>
+			                    <smtp port='' host='' />
+		                    </mail>
+	                    </communication>
+	                    <logistic>
+		                    <sncfkey></sncfkey>
+	                    </logistic>
+	                    <database>
+		                    <login></login>
+		                    <password></password>
+		                    <name></name>
+		                    <host></host>
+	                    </database>
+	                    <deployer>
+		                    <github>
+			                    <host></host>
+			                    <login></login>
+			                    <password></password>
+		                    </github>
+		                    <jira>
+			                    <host></host>
+			                    <login></login>
+			                    <password></password>
+		                    </jira>
+		                    <sonar>
+			                    <host></host>
+			                    <login></login>
+			                    <password></password>
+		                    </sonar>
+		                    <teamcity>
+			                    <host></host>
+			                    <login></login>
+			                    <password></password>
+		                    </teamcity>
+		                    <jenkins>
+			                    <host></host>
+			                    <login></login>
+			                    <password></password>
+		                    </jenkins>
+		                    <docker>
+			                    <host></host>
+			                    <login></login>
+			                    <password></password>
+		                    </docker>
+	                    </deployer>
+                    </configmanager>
+                ");
+            }
         }
         #endregion
     }
