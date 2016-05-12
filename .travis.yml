@@ -1,3 +1,5 @@
 language: csharp
 solution: Tools4Libraries.sln
 mono: latest
+script:
+    - make test
