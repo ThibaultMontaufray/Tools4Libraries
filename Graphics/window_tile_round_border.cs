@@ -11,9 +11,6 @@ namespace Tools4Libraries
     public partial class window_tile_round_border : Panel
     {
         #region Attribute
-        private bool allowMoveWindow;
-        private int offsetX;
-        private int offsetY;
         #endregion
 
         #region Properties
@@ -27,7 +24,6 @@ namespace Tools4Libraries
         public window_tile_round_border()
         {
             InitializeComponent();
-            allowMoveWindow = false;
         }
         #endregion
 

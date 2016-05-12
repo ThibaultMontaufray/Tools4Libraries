@@ -23,7 +23,6 @@ namespace Tools4Libraries
 		private List<string> List_esp;
 		private List<string> List_it;
 		private List<string> List_de;
-        private string lang;
         private string module;
 		private string path;
 		#endregion
