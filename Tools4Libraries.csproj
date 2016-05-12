@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
     <ProjectGuid>{D2C821F1-1CE1-4B0B-B87A-D59B0AE062A0}</ProjectGuid>
@@ -42,6 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>lib\4.0\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <Prefer32Bit>false</Prefer32Bit>
@@ -153,27 +154,6 @@
     <Compile Include="Graphics\window_popup.Designer.cs">
       <DependentUpon>window_popup.cs</DependentUpon>
     </Compile>
-    <Compile Include="Resource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resource.resx</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="ResourceIconSet16Default.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResourceIconSet16Default.resx</DependentUpon>
-    </Compile>
-    <Compile Include="ResourceIconSet32Default.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResourceIconSet32Default.resx</DependentUpon>
-    </Compile>
-    <Compile Include="ResourceMenu.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResourceMenu.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Graphics\window_classic.resx">
@@ -184,15 +164,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProjectInstaller.resx">
       <DependentUpon>ProjectInstaller.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ResourceIconSet16Default.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResourceIconSet16Default.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Graphics\window_tile_postit.resx">
       <DependentUpon>window_tile_postit.cs</DependentUpon>
@@ -213,16 +184,10 @@
     <EmbeddedResource Include="Graphics\window_popup.resx">
       <DependentUpon>window_popup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResourceIconSet32Default.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
-      <LastGenOutput>ResourceIconSet32Default.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ResourceMenu.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResourceMenu.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource.resx" />
+    <EmbeddedResource Include="Resources\ResourceIconSet16Default.resx" />
+    <EmbeddedResource Include="Resources\ResourceIconSet32Default.resx" />
+    <EmbeddedResource Include="Resources\ResourceMenu.resx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
