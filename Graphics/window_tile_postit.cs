@@ -11,9 +11,9 @@ namespace Tools4Libraries
     public partial class window_tile_postit : Panel
     {
         #region Attribute
-        private bool allowMoveWindow;
-        private int offsetX;
-        private int offsetY;
+        //private bool allowMoveWindow;
+        //private int offsetX;
+        //private int offsetY;
         #endregion
 
         #region Properties
@@ -29,7 +29,7 @@ namespace Tools4Libraries
             this.Visible = false;
             InitializeComponent();
             this.Visible = true;
-            allowMoveWindow = false;
+            //allowMoveWindow = false;
         }
         #endregion
 

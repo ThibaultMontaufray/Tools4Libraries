@@ -1,12 +1,10 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace UnitTestProject
+﻿namespace UnitTestProject
 {
-    [TestClass]
+    using NUnit.Framework;
+
     public class UnitTest
     {
-        [TestMethod]
+        [Test]
         public void TestUTRuns()
         {
             Assert.IsTrue(true);

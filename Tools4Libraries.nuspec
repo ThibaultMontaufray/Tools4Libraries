@@ -8,7 +8,6 @@
     <owners>Servodroid</owners>
     <licenseUrl>https://raw.githubusercontent.com/ThibaultMontaufray/Tools4Libraries/master/License</licenseUrl>
     <projectUrl>https://github.com/ThibaultMontaufray/Tools4Libraries</projectUrl>
-    <ReportAbuseUrl>https://www.nuget.org/packages/Tools4Libraries/1.0.4/ReportMyPackage</ReportAbuseUrl>
     <iconUrl>https://raw.githubusercontent.com/ThibaultMontaufray/Tools4Libraries/master/ManagersDevComponents/servodroidIconColor.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Contains icon, read/write a config file, logger.</description>
