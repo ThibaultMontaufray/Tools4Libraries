@@ -12,8 +12,8 @@ namespace Tools4Libraries
     {
         #region Attribute
         private bool allowMoveWindow;
-        private int offsetX;
-        private int offsetY;
+        //private int offsetX;
+        //private int offsetY;
         #endregion
 
         #region Properties
