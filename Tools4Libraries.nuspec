@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Tools4Libraries</id>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <title>Servodroid.Tools4Libraries</title>
     <authors>Thibault MONTAUFRAY</authors>
     <owners>Servodroid</owners>
@@ -14,4 +14,9 @@
     <copyright>Copyright 2015</copyright>
     <tags>Servodroid tools icon config</tags>
   </metadata>
+  <files>
+    <file src="lib\**\*.dll" target="lib" />
+    <file src="lib\**\*.xml" target="lib" />
+    <file src="lib\**\*.config" target="lib" />
+  </files>
 </package>

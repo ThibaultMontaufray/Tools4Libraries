@@ -16,21 +16,13 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{AAD2B1BE-9B2D-455D-8DD4-64E4E84DD985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AAD2B1BE-9B2D-455D-8DD4-64E4E84DD985}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAD2B1BE-9B2D-455D-8DD4-64E4E84DD985}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{AAD2B1BE-9B2D-455D-8DD4-64E4E84DD985}.Debug|x86.Build.0 = Debug|Any CPU
 		{AAD2B1BE-9B2D-455D-8DD4-64E4E84DD985}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AAD2B1BE-9B2D-455D-8DD4-64E4E84DD985}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AAD2B1BE-9B2D-455D-8DD4-64E4E84DD985}.Release|x86.ActiveCfg = Release|Any CPU
-		{AAD2B1BE-9B2D-455D-8DD4-64E4E84DD985}.Release|x86.Build.0 = Release|Any CPU
 		{0AF13185-9976-437D-AEBE-E4B9E5D20DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0AF13185-9976-437D-AEBE-E4B9E5D20DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AF13185-9976-437D-AEBE-E4B9E5D20DC5}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{0AF13185-9976-437D-AEBE-E4B9E5D20DC5}.Debug|x86.Build.0 = Debug|Any CPU
 		{0AF13185-9976-437D-AEBE-E4B9E5D20DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0AF13185-9976-437D-AEBE-E4B9E5D20DC5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0AF13185-9976-437D-AEBE-E4B9E5D20DC5}.Release|x86.ActiveCfg = Release|Any CPU
-		{0AF13185-9976-437D-AEBE-E4B9E5D20DC5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
