@@ -1,6 +1,15 @@
 language: csharp
 solution: Tools4Libraries.sln
 mono: latest
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}
+environment:
+  COVERALLS_REPO_TOKEN:
+    secure: p5zKLqNUh1E3qTpEMMuXR4upxI3X1pZdQ
 notifications:
   email: false
 before_install:
@@ -9,3 +18,8 @@ before_script:
   - nuget restore Tools4Libraries.sln
 after_script:
   - nunit-console UnitTestProject/lib/4.0/UnitTestProject.dll
+test_script:
+- ps: >-
+    .\src\packages\OpenCover.4.6.166\tools\OpenCover.Console.exe -register:user -target:xunit.console.clr4.exe "-targetargs:""tree/master/UnitTestProject/lib/4.0/UnitTestProject.dll"" /noshadow /appveyor" -filter:"+[Tools4Libraries*]*" -output:opencoverCoverage.xml
+    $coveralls = (Resolve-Path "src/packages/coveralls.net.*/tools/csmacnz.coveralls.exe").ToString()
+    & $coveralls --opencover -i opencoverCoverage.xml --repoToken $env:COVERALLS_REPO_TOKEN --commitId $env:APPVEYOR_REPO_COMMIT --commitBranch $env:APPVEYOR_REPO_BRANCH --commitAuthor $env:APPVEYOR_REPO_COMMIT_AUTHOR --commitEmail $env:APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL --commitMessage $env:APPVEYOR_REPO_COMMIT_MESSAGE --jobId $env:APPVEYOR_JOB_ID
