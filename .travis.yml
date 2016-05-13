@@ -1,4 +1,4 @@
-﻿language: csharp
+language: csharp
 solution: Tools4Libraries.sln
 mono: latest
 notifications:
