@@ -178,6 +178,7 @@
     <EmbeddedResource Include="Resources\ResourceMenu.resx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\closeButton.gif" />
   </ItemGroup>
   <ItemGroup>
