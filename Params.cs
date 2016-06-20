@@ -1,10 +1,11 @@
 ﻿namespace Tools4Libraries
 {
+    using System.IO;
     using System.Xml;
 
     public static class Params
     {
-        private const string CONFIGFILE = @"../../../configmanagers.xml";
+        private const string CONFIGFILE = @"configmanagers.xml";
         //private const string CONFIGFILE = @"D:\DEV\_Assistant\Assistant\configmanagers.xml";
 
         #region Attribute
@@ -90,11 +91,87 @@
         #region Constructor
         static Params()
         {
-            LoadXmlParamsFile();
+            if (!File.Exists(CONFIGFILE)) CreateXmlParamsFile();
+            else LoadXmlParamsFile();
         }
         #endregion
 
         #region Methods private
+        private static void CreateXmlParamsFile()
+        {
+            //File.Create(CONFIGFILE);
+            using (StreamWriter sw = new StreamWriter(CONFIGFILE))
+            {
+                sw.WriteLine(@"<configmanager>
+	<web>
+		<proxy>
+			<host></host>
+			<login></login>
+			<password></password>
+		</proxy>
+		<http>
+			<login><login>
+			<password></password>
+		</http>
+	</web>
+	<communication>
+		<slack>
+			<token></token>
+			<url></url>
+			<account></account>
+			<topic></topic>
+		<slack>
+		<mail>
+			<login></login>
+			<password></password>
+			<smtp port='' host='' />
+		</mail>
+	</communication>
+	<logistic>
+		<sncf>
+			<key></key>
+		</sncf>
+	</logistic>
+	<database>
+		<host></host>
+		<login></login>
+		<password></password>
+		<name></name>
+	</database>
+	<github>
+		<host></host>
+		<login></login>
+		<password></password>
+	</github>
+	<jira>
+		<host></host>
+		<login></login>
+		<password></password>
+	</jira>
+	<sonar>
+		<host></host>
+		<login></login>
+		<password></password>
+	</sonar>
+	<teamcity>
+		<host></host>
+		<login></login>
+		<password></password>
+	</teamcity>
+	<jenkins>
+		<host></host>
+		<login></login>
+		<password></password>
+	</jenkins>
+	<docker>
+		<host></host>
+		<login></login>
+		<password></password>
+	</docker>
+</configmanager>
+                ");
+            }
+        }
         private static void LoadXmlParamsFile()
         {
             XmlDocument xml = new XmlDocument();

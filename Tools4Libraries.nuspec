@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Tools4Libraries</id>
-    <version>1.0.5</version>
+    <version>1.0.9</version>
     <title>Servodroid.Tools4Libraries</title>
     <authors>Thibault MONTAUFRAY</authors>
     <owners>Servodroid</owners>
@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/ThibaultMontaufray/Tools4Libraries</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/ThibaultMontaufray/Tools4Libraries/master/ManagersDevComponents/servodroidIconColor.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>Contains icon, read/write a config file, logger.</description>
+    <description>Contains icon, read/write a config file, logger. Some graphical tools but dev still in progress on it</description>
     <copyright>Copyright 2015</copyright>
     <tags>Servodroid tools icon config</tags>
   </metadata>
