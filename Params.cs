@@ -92,7 +92,8 @@
         static Params()
         {
             if (!File.Exists(CONFIGFILE)) CreateXmlParamsFile();
-            else LoadXmlParamsFile();
+
+            LoadXmlParamsFile();
         }
         #endregion
 
@@ -108,9 +109,10 @@
 			<host></host>
 			<login></login>
 			<password></password>
+			<port></port>
 		</proxy>
 		<http>
-			<login><login>
+			<login></login>
 			<password></password>
 		</http>
 	</web>
@@ -120,7 +122,7 @@
 			<url></url>
 			<account></account>
 			<topic></topic>
-		<slack>
+		</slack>
 		<mail>
 			<login></login>
 			<password></password>

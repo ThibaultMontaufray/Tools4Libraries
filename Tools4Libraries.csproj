@@ -4928,6 +4928,10 @@
     <None Include="Resources\IconSet\16x16\redo.png" />
     <None Include="Resources\IconSet\32x32\undo.png" />
     <None Include="Resources\IconSet\32x32\redo.png" />
+    <None Include="Resources\IconSet\16x16\picker_color.png" />
+    <None Include="Resources\IconSet\32x32\picker_color.png" />
+    <None Include="Resources\IconSet\32x32\validation.png" />
+    <None Include="Resources\IconSet\32x32\validation_hover.png" />
     <Content Include="Resources\window_tile_postit\WinBottomLeft.png" />
     <Content Include="Resources\window_tile_postit\WinBottomMiddle.png" />
     <Content Include="Resources\window_tile_postit\WinBottomRight.png" />
