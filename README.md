@@ -11,13 +11,13 @@ Format your .net object to be displayed on web. There is also a little web resea
 
 # Usage examples
 
-For pictures library : 
+<h3>For pictures library : </h3>
 ```csharp
 Image bigImg = Tools4Libraries.Resources.ResourceIconSet32Default.door_out;
 Image smallImg = Tools4Libraries.Resources.ResourceIconSet16Default.door_out;
 ```
 
-For config parameters :
+<h3>For config parameters :</h3>
 
 if the config file is not present, the dll will create it by name :"configmanagers.xml"
 here is an extrat of params :
@@ -29,7 +29,7 @@ here is an extrat of params :
 			<port>8080</port>
 		</proxy>
 ```
-
+and the code to use it :
 ```csharp
 string proxyLogin = Tools4Libraries.Params.WebProxyLogin;
 string proxyPassword = Tools4Libraries.Params.WebProxyPassword;
