@@ -18,6 +18,18 @@ Image smallImg = Tools4Libraries.Resources.ResourceIconSet16Default.door_out;
 ```
 
 For config parameters :
+
+if the config file is not present, the dll will create it by name :"configmanagers.xml"
+here is an extrat of params :
+```xml
+		<proxy>
+			<host>mysuperproxyname</host>
+			<login>userlogin</login>
+			<password>*****</password>
+			<port>8080</port>
+		</proxy>
+```
+
 ```csharp
 string proxyLogin = Tools4Libraries.Params.WebProxyLogin;
 string proxyPassword = Tools4Libraries.Params.WebProxyPassword;
