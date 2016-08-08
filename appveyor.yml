@@ -1,28 +1,36 @@
 version: 1.0.{build}
 skip_tags: true
 configuration: Debug
-init:
-- ps: "$v = [regex]::match($env:APPVEYOR_REPO_BRANCH,'release/(.*)').Groups[1].Value\nWrite-Host \"On branch $($env:APPVEYOR_REPO_BRANCH)\"\nIF($v) { \n   $env:VERSION_FROM_BRANCH = \"$($v).$($env:APPVEYOR_BUILD_NUMBER)\"\n} else {\n   $env:VERSION_FROM_BRANCH = \"0.0.0.$($env:APPVEYOR_BUILD_NUMBER)\"\n}\nWrite-Host \"Set version to $($env:VERSION_FROM_BRANCH)\""
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
-  assembly_version: $(VERSION_FROM_BRANCH)
-  assembly_file_version: $(VERSION_FROM_BRANCH)
-  assembly_informational_version: $(VERSION_FROM_BRANCH)
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
 environment:
   COVERALLS_REPO_TOKEN:
-    secure: sidmejyg6biq7gkr
-platform: Any CPU
-install:
-- ps: >-
-    nuget install Build\.nuget\packages.config -OutputDirectory packages
-
-    nuget restore Tools4Libraries.sln
+    secure: vHjMs/fLy2XdE5n5A5XUGAK9p30TRPGy2XogMC+O+bnJmS8DEOSiKy5nKE+uBCwD
+before_build:
+  - nuget restore Tools4Libraries.sln
 build:
-  project: Tools4Libraries.sln
+  project: .\Tools4Libraries.sln
   verbosity: minimal
 test_script:
 - ps: >-
-    .\packages\OpenCover.4.6.166\tools\OpenCover.Console.exe -register:user -target:nunit-console.exe -register:user "-targetargs:"".\UnitTestProject\bin\$env:CONFIGURATION\UnitTestProject.dll"" /noshadow" -filter:"" -output:opencoverCoverage.xml
+    .\packages\OpenCover.4.6.166\tools\OpenCover.Console.exe -register:user -target:nunit-console.exe "-targetargs:"".\UnitTestProject\bin\$env:CONFIGURATION\UnitTestProject.dll"" /noshadow" -output:opencoverCoverage.xml
     
-    if($env:COVERALLS_REPO_TOKEN) { .\packages\coveralls.net.0.5.0\csmacnz.Coveralls.exe --opencover -i opencoverCoverage.xml --repoToken $env:COVERALLS_REPO_TOKEN --commitId $env:APPVEYOR_REPO_COMMIT --commitBranch $env:APPVEYOR_REPO_BRANCH --commitAuthor $env:APPVEYOR_REPO_COMMIT_AUTHOR --commitEmail $env:APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL --commitMessage $env:APPVEYOR_REPO_COMMIT_MESSAGE --jobId $env:APPVEYOR_JOB_ID }
+    $coveralls = (Resolve-Path "./packages/coveralls.net.0.6.0/tools/csmacnz.Coveralls.exe").ToString()    
+    
+    echo "repo commit : $env:APPVEYOR_REPO_COMMIT"
+    
+    echo "repo branch : $env:APPVEYOR_REPO_BRANCH"
+    
+    echo "commit author : $env:APPVEYOR_REPO_COMMIT_AUTHOR"
+    
+    echo "author mail : $env:APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL"
+    
+    echo "commit message : $env:APPVEYOR_REPO_COMMIT_MESSAGE"
+    
+    echo "build number : $env:APPVEYOR_BUILD_NUMBER"
+    
+    & $coveralls --opencover -i opencoverCoverage.xml --repoToken $env:COVERALLS_REPO_TOKEN --useRelativePaths --commitId $env:APPVEYOR_REPO_COMMIT --commitBranch $env:APPVEYOR_REPO_BRANCH --commitAuthor $env:APPVEYOR_REPO_COMMIT_AUTHOR --commitEmail $env:APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL --commitMessage $env:APPVEYOR_REPO_COMMIT_MESSAGE --jobId $env:APPVEYOR_BUILD_NUMBER --serviceName appveyor
