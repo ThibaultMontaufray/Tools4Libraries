@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System;
 using Tools4Libraries;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace UnitTestProject
 {
