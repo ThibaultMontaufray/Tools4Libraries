@@ -155,50 +155,13 @@ namespace UnitTestProject
         //        Assert.Fail(exp.Message);
         //    }
         //}
-        //[Test]
-        //public void Test_Tools4Lib_ressource16()
-        //{
-        //    try
-        //    {
-        //        var v1 = Tools4Libraries.Resources.ResourceIconSet16Default.arrow_down;
-        //        var v2 = Tools4Libraries.Resources.ResourceIconSet16Default.bullet_red;
-
-        //        Assert.IsTrue(true);
-        //    }
-        //    catch (Exception exp)
-        //    {
-        //        Assert.Fail(exp.Message);
-        //    }
-        //}
-        //[Test]
-        //public void Test_Tools4Lib_ressource32()
-        //{
-        //    try
-        //    {
-        //        var v1 = Tools4Libraries.Resources.ResourceIconSet32Default.arrow_down;
-        //        var v2 = Tools4Libraries.Resources.ResourceIconSet32Default.bullet_red;
-
-        //        Assert.IsTrue(true);
-        //    }
-        //    catch (Exception exp)
-        //    {
-        //        Assert.Fail(exp.Message);
-        //    }
-        //}
         [Test]
-        public void Test_Tools4Lib_log()
+        public void Test_Tools4Lib_ressource16()
         {
             try
             {
-                Log.LogLevel = 5;
-
-                Log.write("[ DEB : 0001 ] test log debug.");
-                Log.write("[ INF : 0002 ] test log info.");
-                Log.write("[ WRN : 0003 ] test log warning.");
-                Log.write("[ ERR : 0004 ] test log error.");
-                Log.write("[ CRT : 0005 ] test log critical.");
-                Log.write("[ EMY : 0006 ] test log emergency.");
-                Log.write("[ OTH : 0007 ] test log other.");
+                var v1 = Tools4Libraries.Resources.ResourceIconSet16Default.arrow_down;
+                var v2 = Tools4Libraries.Resources.ResourceIconSet16Default.bullet_red;
 
                 Assert.IsTrue(true);
             }
@@ -207,5 +170,42 @@ namespace UnitTestProject
                 Assert.Fail(exp.Message);
             }
         }
+        [Test]
+        public void Test_Tools4Lib_ressource32()
+        {
+            try
+            {
+                var v1 = Tools4Libraries.Resources.ResourceIconSet32Default.arrow_down;
+                var v2 = Tools4Libraries.Resources.ResourceIconSet32Default.bullet_red;
+
+                Assert.IsTrue(true);
+            }
+            catch (Exception exp)
+            {
+                Assert.Fail(exp.Message);
+            }
+        }
+        //[Test]
+        //public void Test_Tools4Lib_log()
+        //{
+        //    try
+        //    {
+        //        Log.LogLevel = 5;
+
+        //        Log.write("[ DEB : 0001 ] test log debug.");
+        //        Log.write("[ INF : 0002 ] test log info.");
+        //        Log.write("[ WRN : 0003 ] test log warning.");
+        //        Log.write("[ ERR : 0004 ] test log error.");
+        //        Log.write("[ CRT : 0005 ] test log critical.");
+        //        Log.write("[ EMY : 0006 ] test log emergency.");
+        //        Log.write("[ OTH : 0007 ] test log other.");
+
+        //        Assert.IsTrue(true);
+        //    }
+        //    catch (Exception exp)
+        //    {
+        //        Assert.Fail(exp.Message);
+        //    }
+        //}
     }
 }
