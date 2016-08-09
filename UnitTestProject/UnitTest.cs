@@ -155,36 +155,36 @@ namespace UnitTestProject
         //        Assert.Fail(exp.Message);
         //    }
         //}
-        [Test]
-        public void Test_Tools4Lib_ressource16()
-        {
-            try
-            {
-                var v1 = Tools4Libraries.Resources.ResourceIconSet16Default.arrow_down;
-                var v2 = Tools4Libraries.Resources.ResourceIconSet16Default.bullet_red;
+        //[Test]
+        //public void Test_Tools4Lib_ressource16()
+        //{
+        //    try
+        //    {
+        //        var v1 = Tools4Libraries.Resources.ResourceIconSet16Default.arrow_down;
+        //        var v2 = Tools4Libraries.Resources.ResourceIconSet16Default.bullet_red;
 
-                Assert.IsTrue(true);
-            }
-            catch (Exception exp)
-            {
-                Assert.Fail(exp.Message);
-            }
-        }
-        [Test]
-        public void Test_Tools4Lib_ressource32()
-        {
-            try
-            {
-                var v1 = Tools4Libraries.Resources.ResourceIconSet32Default.arrow_down;
-                var v2 = Tools4Libraries.Resources.ResourceIconSet32Default.bullet_red;
+        //        Assert.IsTrue(true);
+        //    }
+        //    catch (Exception exp)
+        //    {
+        //        Assert.Fail(exp.Message);
+        //    }
+        //}
+        //[Test]
+        //public void Test_Tools4Lib_ressource32()
+        //{
+        //    try
+        //    {
+        //        var v1 = Tools4Libraries.Resources.ResourceIconSet32Default.arrow_down;
+        //        var v2 = Tools4Libraries.Resources.ResourceIconSet32Default.bullet_red;
 
-                Assert.IsTrue(true);
-            }
-            catch (Exception exp)
-            {
-                Assert.Fail(exp.Message);
-            }
-        }
+        //        Assert.IsTrue(true);
+        //    }
+        //    catch (Exception exp)
+        //    {
+        //        Assert.Fail(exp.Message);
+        //    }
+        //}
         [Test]
         public void Test_Tools4Lib_log()
         {
