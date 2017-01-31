@@ -52,45 +52,56 @@ namespace Tools4Libraries
 		
 		#region Methods public
 		public static void write(string text)
-		{	
-			int level = 0;
-			string levelstring = "";
-			string[] tmp = text.Split(' ');
-			levelstring = tmp[1];
-			switch (levelstring) 
-			{
-				case "DEB":
-					level = 5;
-					break;
-				case "INF":
-					level = 4;
-					break;
-				case "WRN":
-					level = 3;
-					break;
-				case "ERR":
-					level = 2;
-					break;
-				case "CRT":
-					level = 1;
-					break;
-				case "EMY":
-					level = 0;
-					break;
-				default:
-					// we don't recognise the level so we show the message.
-					level = 0;
-					text = "->" + text;
-					break;
-			}
+		{
+            try
+            {
+			    int level = 0;
+			    string levelstring = "";
+			    string[] tmp = text.Split(' ');
+			    levelstring = tmp[1];
+			    switch (levelstring) 
+			    {
+				    case "DEB":
+					    level = 5;
+					    break;
+				    case "INF":
+					    level = 4;
+					    break;
+				    case "WRN":
+					    level = 3;
+					    break;
+				    case "ERR":
+					    level = 2;
+					    break;
+				    case "CRT":
+					    level = 1;
+					    break;
+				    case "EMY":
+					    level = 0;
+					    break;
+				    default:
+					    // we don't recognise the level so we show the message.
+					    level = 0;
+					    text = "->" + text;
+					    break;
+			    }
 			
-			if (level <= logLevel)
-			{
-				MessageBox.Show(text, "Debug messages", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-			}
+			    if (level <= logLevel)
+			    {
+				    MessageBox.Show(text, "Debug messages", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+			    }
 			
-			tofile(text);
-		}
+			    tofile(text);
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+
+            }
+        }
 		#endregion
 		
 		#region Meghods private
