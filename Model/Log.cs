@@ -98,6 +98,7 @@ namespace Tools4Libraries
 		{
             try
             {
+                if (!Directory.Exists(Environment.CurrentDirectory + @"\Log")) { Directory.CreateDirectory(Environment.CurrentDirectory + @"\Log"); }
             	if (File.Exists(Environment.CurrentDirectory + @"\Log\application.log")) 
 		        { 
             		using (sw = File.AppendText(Environment.CurrentDirectory + @"\Log\application.log"))
@@ -107,8 +108,6 @@ namespace Tools4Libraries
 		        }
             	else
             	{
-            		AppliParams ap = new AppliParams();
-            		ap.CreateAppliPlateform();
 		            using (sw = File.CreateText(Environment.CurrentDirectory + @"\Log\application.log")) 
 		            {
 		            	buildfile(text);

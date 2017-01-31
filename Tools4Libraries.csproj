@@ -47,7 +47,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <Prefer32Bit>false</Prefer32Bit>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <OutputPath>lib\4.5.2\</OutputPath>
+    <OutputPath>lib\4.5.1\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -88,7 +88,6 @@
     <Compile Include="Graphics\window_jarvis.Designer.cs">
       <DependentUpon>window_jarvis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\AppliParams.cs" />
     <Compile Include="Model\ComboBoxItem.cs" />
     <Compile Include="Model\ComboCollection.cs" />
     <Compile Include="Graphics\window_tile_postit.cs">
@@ -9641,6 +9640,11 @@
     <Content Include="Resources\window_tile_postit\WinTopMiddle.png" />
     <Content Include="Resources\window_tile_postit\WinTopRight.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="Slider\Slider.csproj">
+      <Project>{5a910b52-6ab0-4f84-875d-fff8893a4383}</Project>
+      <Name>Slider</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
 </Project>

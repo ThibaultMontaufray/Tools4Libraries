@@ -15,7 +15,7 @@ namespace UnitTestProject
             Assert.IsTrue(true);
         }
         [Test]
-        public void Test_Tools4Lib_creationParamFile()
+        public void Test_Tools4LibrariescreationParamFile()
         {
             try
             {
@@ -28,7 +28,7 @@ namespace UnitTestProject
             }
         }
         [Test]
-        public void Test_Tools4Lib_params_data_communication()
+        public void Test_Tools4Librariesparams_data_communication()
         {
             try
             {
@@ -50,7 +50,7 @@ namespace UnitTestProject
             }
         }
         [Test]
-        public void Test_Tools4Lib_params_data_database()
+        public void Test_Tools4Librariesparams_data_database()
         {
             try
             {
@@ -67,7 +67,7 @@ namespace UnitTestProject
             }
         }
         [Test]
-        public void Test_Tools4Lib_params_deployer()
+        public void Test_Tools4Librariesparams_deployer()
         {
             try
             {
@@ -103,7 +103,7 @@ namespace UnitTestProject
             }
         }
         [Test]
-        public void Test_Tools4Lib_params_logistique()
+        public void Test_Tools4Librariesparams_logistique()
         {
             try
             {
@@ -117,7 +117,7 @@ namespace UnitTestProject
             }
         }
         [Test]
-        public void Test_Tools4Lib_params_web()
+        public void Test_Tools4Librariesparams_web()
         {
             try
             {
@@ -136,7 +136,7 @@ namespace UnitTestProject
             }
         }
         [Test]
-        public void Test_Tools4Lib_custom_window()
+        public void Test_Tools4Librariescustom_window()
         {
             try
             {
@@ -156,7 +156,7 @@ namespace UnitTestProject
             }
         }
         [Test]
-        public void Test_Tools4Lib_ressource16()
+        public void Test_Tools4Librariesressource16()
         {
             try
             {
@@ -171,7 +171,7 @@ namespace UnitTestProject
             }
         }
         [Test]
-        public void Test_Tools4Lib_ressource32()
+        public void Test_Tools4Librariesressource32()
         {
             try
             {
@@ -186,7 +186,7 @@ namespace UnitTestProject
             }
         }
         //[Test]
-        //public void Test_Tools4Lib_log()
+        //public void Test_Tools4Librarieslog()
         //{
         //    try
         //    {
