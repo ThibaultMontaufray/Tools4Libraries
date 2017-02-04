@@ -40,18 +40,28 @@ namespace Tools4Libraries
 		#region Attribute
 		private static int logLevel;
 		private static StreamWriter sw;
-		#endregion
-		
-		#region Properties
-		public static int LogLevel
+        private static string _applicationAppData;
+        #endregion
+
+        #region Properties
+        public static int LogLevel
 		{
 			get { return logLevel; }
 			set { logLevel = value; }
-		}
-		#endregion
-		
-		#region Methods public
-		public static void write(string text)
+        }
+        public static string ApplicationAppData
+        {
+            get { return _applicationAppData; }
+            set
+            {
+                _applicationAppData = value;
+                if (_applicationAppData != null && !Directory.Exists(_applicationAppData)) { Directory.CreateDirectory(_applicationAppData); }
+            }
+        }
+        #endregion
+
+        #region Methods public
+        public static void Write(string text)
 		{
             try
             {
@@ -91,7 +101,7 @@ namespace Tools4Libraries
 				    MessageBox.Show(text, "Debug messages", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 			    }
 			
-			    tofile(text);
+			    Tofile(text);
             }
             catch (Exception)
             {
@@ -102,36 +112,68 @@ namespace Tools4Libraries
 
             }
         }
-		#endregion
-		
-		#region Meghods private
-		private static void tofile(string text)
+        public static void Happen(string fileName, string newRow)
+        {
+            try
+            {
+                if (!File.Exists(_applicationAppData + "\\" + fileName)) { File.Create(_applicationAppData + "\\" + fileName); }
+                using (StreamWriter sw = new StreamWriter(_applicationAppData + "\\" + fileName, true))
+                {
+                    sw.WriteLine(newRow);
+                }
+            }
+            catch (Exception exp)
+            {
+                Log.Write("[ ERR 0000 ] : cannot write row for the file " + _applicationAppData + "\\" + fileName + " exp : " + exp.Message);
+            }
+        }
+        public static string GetFile(string fileName)
+        {
+            string text = string.Empty;
+
+            if (!File.Exists(_applicationAppData + "\\" + fileName)) return string.Empty;
+            else
+            {
+                using (StreamReader sr = new StreamReader(_applicationAppData + "\\" + fileName))
+                {
+                    text = sr.ReadToEnd();
+                }
+                return text;
+            }
+        }
+        public static void Clean(string fileName)
+        {
+            if (File.Exists(_applicationAppData + "\\" + fileName)) File.Delete(_applicationAppData + "\\" + fileName);
+        }
+        #endregion
+
+        #region Meghods private
+        private static void Tofile(string text)
 		{
             try
             {
-                if (!Directory.Exists(Environment.CurrentDirectory + @"\Log")) { Directory.CreateDirectory(Environment.CurrentDirectory + @"\Log"); }
-            	if (File.Exists(Environment.CurrentDirectory + @"\Log\application.log")) 
-		        { 
-            		using (sw = File.AppendText(Environment.CurrentDirectory + @"\Log\application.log"))
-			        {
-            			buildfile(text);
-			        }	
-		        }
-            	else
-            	{
-		            using (sw = File.CreateText(Environment.CurrentDirectory + @"\Log\application.log")) 
-		            {
-		            	buildfile(text);
-		            }		
-            	}
-		    }
+                if (File.Exists(_applicationAppData + @"\application.log"))
+                {
+                    using (sw = File.AppendText(_applicationAppData + @"\application.log"))
+                    {
+                        Buildfile(text);
+                    }
+                }
+                else
+                {
+                    using (sw = File.CreateText(_applicationAppData + @"\application.log"))
+                    {
+                        Buildfile(text);
+                    }
+                }
+            }
             catch (Exception exp)
             {
-            	MessageBox.Show("Error when writing the log date : " + exp.Message);
+                Log.Write("[ERR 0000] : cannot write issue text to file : " + exp.Message) ;
             }
 		}
 		
-		private static void buildfile(string text)
+		private static void Buildfile(string text)
 		{
 			string level = "";
         	string num = "";
@@ -168,14 +210,14 @@ namespace Tools4Libraries
 			}
 			
         	// num -------------------------------------
-			num = "<EventID=\"" + tmps[3] + "\"/>";
+			num = string.Format("<EventID=\"{0}\"/>", tmps[3].Equals("]") ? tmps[2] : tmps[3]);
 			
         	// description -----------------------------
 			tmps = text.Split(']');
-			desc = "<EventText=\"" + tmps[1].Replace('\n', '#') + "\"/>";
+			desc = string.Format("<EventText=\"{0}\"/>", tmps[1].Replace('\n', '#'));
 			
         	// date ------------------------------------
-        	date = "<DateTime=\"" + DateTime.Now + "\"/>";
+        	date = string.Format("<DateTime=\"{0}\"/>", DateTime.Now);
         	
             sw.WriteLine("<log>" + date + level + num + desc + "</log>");
 			

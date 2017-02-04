@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <Prefer32Bit>false</Prefer32Bit>
-    <OutputPath>lib\4.0\</OutputPath>
+    <OutputPath>lib\4.5.1\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <Prefer32Bit>false</Prefer32Bit>
@@ -9631,6 +9631,12 @@
     <None Include="Resources\IconSetDefault\32\youtube.png" />
     <None Include="Resources\IconSetDefault\32\zootool.png" />
     <None Include="Resources\IconSetDefault\32\zip.png" />
+    <None Include="Resources\qrcode.png" />
+    <None Include="Resources\videoRotation.png" />
+    <None Include="Resources\videoRotation0.png" />
+    <None Include="Resources\videoRotation90.png" />
+    <None Include="Resources\videoRotation180.png" />
+    <None Include="Resources\videoRotation270.png" />
     <Content Include="Resources\window_tile_postit\WinBottomLeft.png" />
     <Content Include="Resources\window_tile_postit\WinBottomMiddle.png" />
     <Content Include="Resources\window_tile_postit\WinBottomRight.png" />

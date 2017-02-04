@@ -7528,4 +7528,22 @@
   <data name="mosaique" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>IconSetDefault\16\mosaique.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="qrcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>qrcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="videoRotation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>videoRotation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="videoRotation0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>videoRotation0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="videoRotation180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>videoRotation180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="videoRotation270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>videoRotation270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="videoRotation90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>videoRotation90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

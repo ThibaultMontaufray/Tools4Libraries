@@ -18603,6 +18603,16 @@ namespace Tools4Libraries.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap qrcode {
+            get {
+                object obj = ResourceManager.GetObject("qrcode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap question {
             get {
                 object obj = ResourceManager.GetObject("question", resourceCulture);
@@ -23986,6 +23996,56 @@ namespace Tools4Libraries.Resources {
         public static System.Drawing.Bitmap videodisplay {
             get {
                 object obj = ResourceManager.GetObject("videodisplay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap videoRotation {
+            get {
+                object obj = ResourceManager.GetObject("videoRotation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap videoRotation0 {
+            get {
+                object obj = ResourceManager.GetObject("videoRotation0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap videoRotation180 {
+            get {
+                object obj = ResourceManager.GetObject("videoRotation180", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap videoRotation270 {
+            get {
+                object obj = ResourceManager.GetObject("videoRotation270", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap videoRotation90 {
+            get {
+                object obj = ResourceManager.GetObject("videoRotation90", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
