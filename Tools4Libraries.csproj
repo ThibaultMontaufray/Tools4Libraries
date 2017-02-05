@@ -9637,6 +9637,7 @@
     <None Include="Resources\videoRotation90.png" />
     <None Include="Resources\videoRotation180.png" />
     <None Include="Resources\videoRotation270.png" />
+    <None Include="Resources\image_invert.png" />
     <Content Include="Resources\window_tile_postit\WinBottomLeft.png" />
     <Content Include="Resources\window_tile_postit\WinBottomMiddle.png" />
     <Content Include="Resources\window_tile_postit\WinBottomRight.png" />

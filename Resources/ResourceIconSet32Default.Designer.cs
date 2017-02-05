@@ -13483,6 +13483,16 @@ namespace Tools4Libraries.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap image_invert {
+            get {
+                object obj = ResourceManager.GetObject("image_invert", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap image_link {
             get {
                 object obj = ResourceManager.GetObject("image_link", resourceCulture);
