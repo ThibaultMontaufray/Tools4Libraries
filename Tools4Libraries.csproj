@@ -70,6 +70,12 @@
     <Compile Include="Graphics\CheckedComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Graphics\PanelCustom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Graphics\UserControlCustom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Graphics\Window.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Graphics\PanelCustom.resx">
+      <DependentUpon>PanelCustom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Graphics\window_classic.resx">
       <DependentUpon>window_classic.cs</DependentUpon>
     </EmbeddedResource>
@@ -9631,13 +9640,13 @@
     <None Include="Resources\IconSetDefault\32\youtube.png" />
     <None Include="Resources\IconSetDefault\32\zootool.png" />
     <None Include="Resources\IconSetDefault\32\zip.png" />
-    <None Include="Resources\qrcode.png" />
     <None Include="Resources\videoRotation.png" />
     <None Include="Resources\videoRotation0.png" />
     <None Include="Resources\videoRotation90.png" />
     <None Include="Resources\videoRotation180.png" />
     <None Include="Resources\videoRotation270.png" />
     <None Include="Resources\image_invert.png" />
+    <None Include="Resources\qrcode.png" />
     <Content Include="Resources\window_tile_postit\WinBottomLeft.png" />
     <Content Include="Resources\window_tile_postit\WinBottomMiddle.png" />
     <Content Include="Resources\window_tile_postit\WinBottomRight.png" />
