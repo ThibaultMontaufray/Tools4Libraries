@@ -18,22 +18,35 @@ namespace Tools4Libraries
         private System.Windows.Forms.Panel panelBottomLeft;
 
         public System.Windows.Forms.Panel panelMiddle;
+        private Panel panelTitle;
+        private Label _title;
         public UserControlCustom _userControl;
         #endregion
 
         #region Properties
+        public string Title
+        {
+            get { return _title.Text; }
+            set
+            {
+                _title.Text = value;
+                RefreshTitle();
+            }
+        }
         #endregion
 
         #region Constructor
         public PanelCustom()
         {
             InitializeComponent();
+            RefreshTitle();
         }
         public PanelCustom(UserControlCustom userControl)
         {
             _userControl = userControl;
             InitializeComponent();
             LoadUserControl();
+            RefreshTitle();
         }
         #endregion
 
@@ -80,8 +93,11 @@ namespace Tools4Libraries
             this.panelRight = new System.Windows.Forms.Panel();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panelMiddle = new System.Windows.Forms.Panel();
+            this.panelTitle = new System.Windows.Forms.Panel();
+            this._title = new System.Windows.Forms.Label();
             this.panelTop.SuspendLayout();
             this.panelBottom.SuspendLayout();
+            this.panelTitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTop
@@ -90,9 +106,9 @@ namespace Tools4Libraries
             this.panelTop.Controls.Add(this.panelTopRight);
             this.panelTop.Controls.Add(this.panelTopLeft);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Location = new System.Drawing.Point(0, 25);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(600, 25);
+            this.panelTop.Size = new System.Drawing.Size(554, 25);
             this.panelTop.TabIndex = 0;
             // 
             // panelTopMiddle
@@ -101,14 +117,14 @@ namespace Tools4Libraries
             this.panelTopMiddle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTopMiddle.Location = new System.Drawing.Point(25, 0);
             this.panelTopMiddle.Name = "panelTopMiddle";
-            this.panelTopMiddle.Size = new System.Drawing.Size(550, 25);
+            this.panelTopMiddle.Size = new System.Drawing.Size(504, 25);
             this.panelTopMiddle.TabIndex = 2;
             // 
             // panelTopRight
             // 
             this.panelTopRight.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTopRight.BackgroundImage")));
             this.panelTopRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelTopRight.Location = new System.Drawing.Point(575, 0);
+            this.panelTopRight.Location = new System.Drawing.Point(529, 0);
             this.panelTopRight.Name = "panelTopRight";
             this.panelTopRight.Size = new System.Drawing.Size(25, 25);
             this.panelTopRight.TabIndex = 1;
@@ -128,9 +144,9 @@ namespace Tools4Libraries
             this.panelBottom.Controls.Add(this.panelBottomRight);
             this.panelBottom.Controls.Add(this.panelBottomLeft);
             this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottom.Location = new System.Drawing.Point(0, 375);
+            this.panelBottom.Location = new System.Drawing.Point(0, 215);
             this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Size = new System.Drawing.Size(600, 25);
+            this.panelBottom.Size = new System.Drawing.Size(554, 25);
             this.panelBottom.TabIndex = 1;
             // 
             // panelBottomMiddle
@@ -139,14 +155,14 @@ namespace Tools4Libraries
             this.panelBottomMiddle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBottomMiddle.Location = new System.Drawing.Point(25, 0);
             this.panelBottomMiddle.Name = "panelBottomMiddle";
-            this.panelBottomMiddle.Size = new System.Drawing.Size(550, 25);
+            this.panelBottomMiddle.Size = new System.Drawing.Size(504, 25);
             this.panelBottomMiddle.TabIndex = 3;
             // 
             // panelBottomRight
             // 
             this.panelBottomRight.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelBottomRight.BackgroundImage")));
             this.panelBottomRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelBottomRight.Location = new System.Drawing.Point(575, 0);
+            this.panelBottomRight.Location = new System.Drawing.Point(529, 0);
             this.panelBottomRight.Name = "panelBottomRight";
             this.panelBottomRight.Size = new System.Drawing.Size(25, 25);
             this.panelBottomRight.TabIndex = 2;
@@ -164,30 +180,50 @@ namespace Tools4Libraries
             // 
             this.panelRight.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelRight.BackgroundImage")));
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRight.Location = new System.Drawing.Point(575, 25);
+            this.panelRight.Location = new System.Drawing.Point(529, 50);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(25, 350);
+            this.panelRight.Size = new System.Drawing.Size(25, 165);
             this.panelRight.TabIndex = 2;
             // 
             // panelLeft
             // 
             this.panelLeft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLeft.BackgroundImage")));
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft.Location = new System.Drawing.Point(0, 25);
+            this.panelLeft.Location = new System.Drawing.Point(0, 50);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(25, 350);
+            this.panelLeft.Size = new System.Drawing.Size(25, 165);
             this.panelLeft.TabIndex = 3;
             // 
             // panelMiddle
             // 
             this.panelMiddle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMiddle.BackgroundImage")));
             this.panelMiddle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMiddle.Location = new System.Drawing.Point(25, 25);
+            this.panelMiddle.Location = new System.Drawing.Point(25, 50);
             this.panelMiddle.Name = "panelMiddle";
-            this.panelMiddle.Size = new System.Drawing.Size(550, 350);
+            this.panelMiddle.Size = new System.Drawing.Size(504, 165);
             this.panelMiddle.TabIndex = 0;
             // 
-            // PanelShield
+            // panelTitle
+            // 
+            this.panelTitle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTitle.BackgroundImage")));
+            this.panelTitle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelTitle.Controls.Add(this._title);
+            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle.Location = new System.Drawing.Point(0, 0);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(554, 25);
+            this.panelTitle.TabIndex = 0;
+            // 
+            // _title
+            // 
+            this._title.AutoSize = true;
+            this._title.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._title.Location = new System.Drawing.Point(73, 7);
+            this._title.Name = "_title";
+            this._title.Size = new System.Drawing.Size(0, 15);
+            this._title.TabIndex = 0;
+            // 
+            // PanelCustom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -197,10 +233,15 @@ namespace Tools4Libraries
             this.Controls.Add(this.panelRight);
             this.Controls.Add(this.panelBottom);
             this.Controls.Add(this.panelTop);
-            this.Name = "PanelShield";
+            this.Controls.Add(this.panelTitle);
+            this.Name = "PanelCustom";
+            this.Size = new System.Drawing.Size(554, 240);
             this.panelTop.ResumeLayout(false);
             this.panelBottom.ResumeLayout(false);
+            this.panelTitle.ResumeLayout(false);
+            this.panelTitle.PerformLayout();
             this.ResumeLayout(false);
+
         }
         private void LoadUserControl()
         {
@@ -208,12 +249,39 @@ namespace Tools4Libraries
             {
                 this.SuspendLayout();
                 this.Width = _userControl.Width + 50;
-                this.Height = _userControl.Height + 50;
+                this.Height = _userControl.Height + 75;
                 _userControl.Dock = DockStyle.Fill;
+                _userControl.Resize += _userControl_Resize;
                 panelMiddle.Controls.Add(_userControl);
-                this.ResumeLayout(true);
                 this.Invalidate();
+                this.ResumeLayout(true);
             }
+        }
+        private void RefreshTitle()
+        {
+            if (_userControl != null)
+            { 
+                if(string.IsNullOrEmpty(_title.Text))
+                {
+                    panelTitle.Height = 0;
+                    this.Height = _userControl.Height + 50;
+                }
+                else
+                {
+                    panelTitle.Height = 25;
+                    this.Height = _userControl.Height + 75;
+                }
+            }
+        }
+        #endregion
+
+        #region Event
+        private void _userControl_Resize(object sender, System.EventArgs e)
+        {
+            //this.SuspendLayout();
+            //this.Height = _userControl.Height + 50;
+            //this.Invalidate();
+            //this.ResumeLayout();
         }
         #endregion
     }
