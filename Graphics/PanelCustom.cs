@@ -251,7 +251,7 @@ namespace Tools4Libraries
                 this.Width = _userControl.Width + 50;
                 this.Height = _userControl.Height + 75;
                 _userControl.Dock = DockStyle.Fill;
-                _userControl.Resize += _userControl_Resize;
+                _userControl.HeightChanged += _userControl_HeightChanged;
                 panelMiddle.Controls.Add(_userControl);
                 this.Invalidate();
                 this.ResumeLayout(true);
@@ -276,12 +276,12 @@ namespace Tools4Libraries
         #endregion
 
         #region Event
-        private void _userControl_Resize(object sender, System.EventArgs e)
+        private void _userControl_HeightChanged(object o)
         {
-            //this.SuspendLayout();
-            //this.Height = _userControl.Height + 50;
-            //this.Invalidate();
-            //this.ResumeLayout();
+            this.SuspendLayout();
+            this.Height = (int) o + 80;
+            this.Invalidate();
+            this.ResumeLayout();
         }
         #endregion
     }

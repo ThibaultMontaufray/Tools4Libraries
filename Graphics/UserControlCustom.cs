@@ -2,8 +2,10 @@
 
 namespace Tools4Libraries
 {
-    public class UserControlCustom : UserControl
+    public delegate void UserControlCustomEventHandler(object o);
+    public abstract class UserControlCustom : UserControl
     {
+        public abstract event UserControlCustomEventHandler HeightChanged;
         public virtual void RefreshData()
         {
 
