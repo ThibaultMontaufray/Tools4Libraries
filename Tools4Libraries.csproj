@@ -188,7 +188,7 @@
       <DependentUpon>window_dialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Graphics\window_black.resx">
@@ -311,6 +311,9 @@
     <None Include="Resources\cd_burn2.png" />
     <None Include="Resources\fax.png" />
     <None Include="Resources\fax2.png" />
+    <None Include="Resources\expand.cur" />
+    <Resource Include="Resources\Cursor\expand.cur" />
+    <Resource Include="Resources\Cursor\reduce.cur" />
     <Content Include="Resources\IconSetDefault\16\application_side_tree.png" />
     <None Include="Resources\IconSetDefault\16\application_split.png" />
     <None Include="Resources\IconSetDefault\16\application_tile_horizontal.png" />
@@ -9648,6 +9651,7 @@
     <None Include="Resources\videoRotation270.png" />
     <None Include="Resources\image_invert.png" />
     <None Include="Resources\qrcode.png" />
+    <None Include="Resources\reduce.cur" />
     <Content Include="Resources\window_tile_postit\WinBottomLeft.png" />
     <Content Include="Resources\window_tile_postit\WinBottomMiddle.png" />
     <Content Include="Resources\window_tile_postit\WinBottomRight.png" />
