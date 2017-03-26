@@ -2,7 +2,7 @@
 
 namespace Tools4Libraries
 {
-    public class PanelCustom : UserControl
+    public class PanelCustom : UserControlCustom
     {
         #region Attribute
         private System.ComponentModel.IContainer components = null;

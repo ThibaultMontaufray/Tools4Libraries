@@ -19,20 +19,25 @@ namespace Tools4Libraries
 	public class GPInterface
 	{	
 		#region Attributes
-		private List<string> listvisiblecomponents = null;	
-		private string pathFile;
-		private string extention;
-		private bool openned;
-		#endregion
-		
-		#region Properties
-		public string PathFile
-		{
-			get { return pathFile; }
-			set { pathFile = value; }
-		}
-		
-		public string Extention
+		protected List<string> listvisiblecomponents = null;	
+		protected string pathFile;
+		protected string extention;
+        protected bool openned;
+        protected Panel _sheet;
+        #endregion
+
+        #region Properties
+        public Panel Sheet
+        {
+            get { return _sheet; }
+            set { _sheet = value; }
+        }
+        public string PathFile
+        {
+            get { return pathFile; }
+            set { pathFile = value; }
+        }
+        public string Extention
 		{
 			get { return extention; }
 			set { extention = value; }
@@ -106,13 +111,26 @@ namespace Tools4Libraries
 		}
 		public virtual void Resize()
 		{
-		
-		}
-		public virtual void Refresh()
-		{
-			
-		}
-		public virtual void GlobalAction(object sender, EventArgs e)
+
+        }
+        public virtual void Refresh()
+        {
+
+        }
+        public virtual void RefreshData()
+        {
+            if (_sheet != null)
+            { 
+                foreach (Control ctrl in _sheet.Controls)
+                {
+                    if (ctrl.Name.Equals("CurrentView"))
+                    {
+                        ((UserControlCustom)ctrl).RefreshData();
+                    }
+                }
+            }
+        }
+        public virtual void GlobalAction(object sender, EventArgs e)
 		{
 			
 		}
