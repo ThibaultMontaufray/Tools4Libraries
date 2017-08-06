@@ -71,7 +71,10 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Graphics\PanelCustom.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Graphics\PanelScrollable.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Graphics\UserControlCustom.cs">
       <SubType>UserControl</SubType>
@@ -118,7 +121,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Model\KeyValuePairSerializable.cs" />
-    <Compile Include="Params.cs" />
+    <Compile Include="Model\Params.cs" />
     <Compile Include="ProjectInstaller.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -9660,12 +9663,6 @@
     <Content Include="Resources\window_tile_postit\WinTopLeft.png" />
     <Content Include="Resources\window_tile_postit\WinTopMiddle.png" />
     <Content Include="Resources\window_tile_postit\WinTopRight.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Slider\Slider.csproj">
-      <Project>{5a910b52-6ab0-4f84-875d-fff8893a4383}</Project>
-      <Name>Slider</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
 </Project>

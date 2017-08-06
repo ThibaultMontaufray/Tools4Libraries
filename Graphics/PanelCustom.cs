@@ -2,7 +2,7 @@
 
 namespace Tools4Libraries
 {
-    public class PanelCustom : UserControlCustom
+    public class PanelCustom : PanelScrollable
     {
         #region Attribute
         private System.ComponentModel.IContainer components = null;
@@ -39,14 +39,14 @@ namespace Tools4Libraries
         public PanelCustom()
         {
             InitializeComponent();
-            RefreshTitle();
+            Init();
         }
         public PanelCustom(UserControlCustom userControl)
         {
             _userControl = userControl;
             InitializeComponent();
             LoadUserControl();
-            RefreshTitle();
+            Init();
         }
         #endregion
 
@@ -79,6 +79,10 @@ namespace Tools4Libraries
         #endregion
 
         #region Methods private
+        private void Init()
+        {
+            RefreshTitle();
+        }
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelCustom));
@@ -225,8 +229,6 @@ namespace Tools4Libraries
             // 
             // PanelCustom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.panelMiddle);
             this.Controls.Add(this.panelLeft);
@@ -234,8 +236,11 @@ namespace Tools4Libraries
             this.Controls.Add(this.panelBottom);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelTitle);
-            this.Name = "PanelCustom";
+            this.EnableAutoScrollHorizontal = false;
+            this.EnableAutoScrollVertical = false;
             this.Size = new System.Drawing.Size(554, 240);
+            this.VisibleAutoScrollHorizontal = false;
+            this.VisibleAutoScrollVertical = false;
             this.panelTop.ResumeLayout(false);
             this.panelBottom.ResumeLayout(false);
             this.panelTitle.ResumeLayout(false);
