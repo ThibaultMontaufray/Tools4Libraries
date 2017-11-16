@@ -58,8 +58,13 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.Ribbon, Version=3.5.8.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Droid-Manager\packages\officeribbon.3.5.8.4\lib\net20\System.Windows.Forms.Ribbon.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -74,6 +79,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Graphics\PanelScrollable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Graphics\TSM.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Graphics\UserControlCustom.cs">
@@ -121,6 +129,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Model\KeyValuePairSerializable.cs" />
+    <Compile Include="Model\Params - Copier.cs" />
     <Compile Include="Model\Params.cs" />
     <Compile Include="ProjectInstaller.cs">
       <SubType>Component</SubType>
@@ -9647,14 +9656,14 @@
     <None Include="Resources\IconSetDefault\32\youtube.png" />
     <None Include="Resources\IconSetDefault\32\zootool.png" />
     <None Include="Resources\IconSetDefault\32\zip.png" />
+    <None Include="Resources\image_invert.png" />
+    <None Include="Resources\qrcode.png" />
+    <None Include="Resources\reduce.cur" />
     <None Include="Resources\videoRotation.png" />
     <None Include="Resources\videoRotation0.png" />
     <None Include="Resources\videoRotation90.png" />
     <None Include="Resources\videoRotation180.png" />
     <None Include="Resources\videoRotation270.png" />
-    <None Include="Resources\image_invert.png" />
-    <None Include="Resources\qrcode.png" />
-    <None Include="Resources\reduce.cur" />
     <Content Include="Resources\window_tile_postit\WinBottomLeft.png" />
     <Content Include="Resources\window_tile_postit\WinBottomMiddle.png" />
     <Content Include="Resources\window_tile_postit\WinBottomRight.png" />

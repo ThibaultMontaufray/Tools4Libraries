@@ -13,17 +13,21 @@ using System.Collections.Generic;
 
 namespace Tools4Libraries
 {
-	/// <summary>
-	/// Description of Manager.
-	/// </summary>
-	public class GPInterface
-	{	
-		#region Attributes
-		protected List<string> listvisiblecomponents = null;	
+    /// <summary>
+    /// Description of Manager.
+    /// </summary>
+    public delegate void InterfaceEventHandler(object o);
+    public abstract class GPInterface
+	{
+        #region Attributes
+        //public event InterfaceEventHandler SheetDisplayRequested;
+
+        protected List<string> listvisiblecomponents = null;	
 		protected string pathFile;
 		protected string extention;
         protected bool openned;
         protected Panel _sheet;
+        protected TSM _tsm;
         #endregion
 
         #region Properties
@@ -68,7 +72,7 @@ namespace Tools4Libraries
 		}
 		#endregion
 		
-		#region Methods
+		#region Methods public
         public virtual bool Open(object obj)
         {
             return false;
@@ -109,15 +113,24 @@ namespace Tools4Libraries
 		{
 			
 		}
-		public virtual void Resize()
-		{
-
-        }
-        public virtual void Refresh()
+		public void Resize()
         {
-
+            if (_sheet != null)
+            { 
+                foreach (Control ctrl in _sheet.Controls)
+                {
+                    if (ctrl.Name.Equals("CurrentView"))
+                    {
+                        ctrl.Left = (_sheet.Width / 2) - (ctrl.Width / 2);
+                    }
+                }
+            }
         }
-        public virtual void RefreshData()
+        public void Refresh()
+        {
+            if (_tsm != null) { _tsm.RefreshData(this); }
+        }
+        public void RefreshData()
         {
             if (_sheet != null)
             { 
@@ -130,10 +143,16 @@ namespace Tools4Libraries
                 }
             }
         }
-        public virtual void GlobalAction(object sender, EventArgs e)
-		{
-			
-		}
-		#endregion
-	}
+        public void GlobalAction(object sender, EventArgs e)
+        {
+            ToolBarEventArgs tbea = e as ToolBarEventArgs;
+            string action = tbea.EventText;
+            GoAction(action);
+        }
+        #endregion
+
+        #region Methods protected
+        public abstract void GoAction(string action);
+        #endregion
+    }
 }
